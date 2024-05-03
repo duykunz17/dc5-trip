@@ -6771,4 +6771,36 @@ h6 {
   font-size: 12px;
 }
 
+.mc_logo_game {
+  text-align: center;
+  margin: 0 0 20px;
+  height: 111px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tg_desc_game {
+  margin: 0 0 30px;
+}
+
+.tg_desc_game p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  /* font-family: montserrat-semibold; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-height: 88px;
+}
+
+.mc_game_select img {
+  border-radius: 6px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=style.css.map */

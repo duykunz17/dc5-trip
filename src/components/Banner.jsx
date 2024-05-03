@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Banner extends Component {
     render() {
         return (
-            <div className="bd-example">
+            <div className='container'>
                 <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to={0} className="active" />
@@ -12,110 +12,61 @@ class Banner extends Component {
                         {/* <li data-target="#carouselExampleCaptions" data-slide-to={2} /> */}
                     </ol>
                     <div className="carousel-inner">
-                        {/* <div className="carousel-item active">
-                            <div className="row">
-                                <div className="col-lg-4" style={{ backgroundImage: "url(" + "images/bg-fairy-land.jpg" + ")", backgroundRepeat: "no-repeat" }}>
-                                    <div className='col-lg-10'>
-                                        <div className="" style={{ display: "flex", alignItems: "center", flexDirection: "column", margin: "40px", textAlign: "center" }}>
-                                            <img style={{ marginBottom: "10px" }} src="images/logo-fairy-land.jpg" className="d-block w-50" alt="..." />
-                                            <p style={{ color: "white", marginBottom: "10px" }}>Lạc bước vào thế giới cổ tích lung linh như một giấc mơ, và ẩn chứa những trò chơi mạo hiểm không thể bỏ lỡ như siêu phẩm Tata show, Zipline đạt 3 kỷ lục, Đường lượn nhớ đời...</p>
-                                            <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/1.jpg" className="d-block w-100" alt="..." />
-                                            <Link to="/place/1" className="boxed-btn3">Khám phá ngay</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4" style={{ backgroundImage: "url(" + "images/bg-adventure-land.jpg" + ")", backgroundRepeat: "no-repeat" }}>
-                                    <div className='col-lg-10'>
-                                        <div className="" style={{ display: "flex", alignItems: "center", flexDirection: "column", margin: "40px", textAlign: "center" }}>
-                                            <img style={{ marginBottom: "10px" }} src="images/logo-adventure-land.jpg" className="d-block w-50" alt="..." />
-                                            <p style={{ color: "white", marginBottom: "10px" }}>Lạc bước vào thế giới cổ tích lung linh như một giấc mơ, và ẩn chứa những trò chơi mạo hiểm không thể bỏ lỡ như siêu phẩm Tata show, Zipline đạt 3 kỷ lục, Đường lượn nhớ đời...</p>
-                                            <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/1.jpg" className="d-block w-100" alt="..." />
-                                            <Link to="/place/1" className="boxed-btn3">Khám phá ngay</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4" style={{ backgroundImage: "url(" + "images/bg-adventure-land.jpg" + ")", backgroundRepeat: "no-repeat" }}>
-                                    <div className='col-lg-10'>
-                                        <div className="" style={{ display: "flex", alignItems: "center", flexDirection: "column", margin: "40px", textAlign: "center" }}>
-                                            <img style={{ marginBottom: "10px" }} src="images/logo-adventure-land.jpg" className="d-block w-50" alt="..." />
-                                            <p style={{ color: "white", marginBottom: "10px" }}>Lạc bước vào thế giới cổ tích lung linh như một giấc mơ, và ẩn chứa những trò chơi mạo hiểm không thể bỏ lỡ như siêu phẩm Tata show, Zipline đạt 3 kỷ lục, Đường lượn nhớ đời...</p>
-                                            <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/1.jpg" className="d-block w-100" alt="..." />
-                                            <Link to="/place/1" className="boxed-btn3">Khám phá ngay</Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
                         <div className="carousel-item active">
-                            <div className="row">
-                                <div className="col-lg-4" >
-                                    <img src="images/bg-fairy-land.jpg" className="d-block w-100" alt="..." style={{ height: "100%" }} />
-                                    <div className="carousel-caption" style={{ display: "flex", flexDirection: "column", alignItems: "center", height: "100%", top: "10%" }}>
-                                        <img style={{ marginBottom: "10px", display: "inline-block" }} src="images/logo-fairy-land.jpg" className="" alt="..." />
-                                        <span style={{ color: "white", marginBottom: "10px" }}>Lạc bước vào thế giới cổ tích lung linh như một giấc mơ, và ẩn chứa những trò chơi mạo hiểm không thể bỏ lỡ như siêu phẩm Tata show, Zipline đạt 3 kỷ lục, Đường lượn nhớ đời...</span>
-                                        <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/1.jpg" className="d-block w-100 img" alt="..." />
+                            <div className="row" style={{ margin: 0, textAlign: "center", display: "flex", justifyContent: "space-around" }}>
+                                <div className="col-lg-4" style={{ backgroundImage: `url("images/bg-fairy-land.jpg")`, padding: "50px 15px 50px 15px", margin: "-10px" }}>
+                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%" }}>
+                                        <div className="mc_logo_game">
+                                            <img style={{ maxWidth: "100%", height: "auto" }} src="images/logo-fairy-land.jpg" className="" alt="..." />
+                                        </div>
+                                        <div className="tg_desc_game">
+                                            <p>Bước chân vào xử sở thần tiên, trải nghiệm các trò chơi trong nhà cho gia đình. Và không thể bỏ qua siêu phẩm Zipline và Đường lượn nhớ đời nếu bạn là tín đồ của cảm giác mạnh</p>
+                                        </div>
+                                        <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "200px" }}>
+                                            <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/1.jpg" alt="..." />
+                                        </div>
                                         <Link to="/place/1" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
                                     </div>
                                 </div>
-                                <div className="col-lg-4" >
-                                    <img src="images/bg-adventure-land.jpg" className="d-block w-100" alt="..." style={{ height: "100%" }} />
-                                    <div className="carousel-caption" style={{ display: "flex", flexDirection: "column", alignItems: "center", height: "100%", top: "10%" }}>
-                                        <img style={{ marginBottom: "10px", display: "inline-block" }} src="images/logo-adventure-land.jpg" className="" alt="..." />
-                                        <span style={{ color: "white", marginBottom: "10px" }}>Thỏa sức chinh phục các trò chơi cảm giác mạnh đẳng cấp thế giới với độ thử thách không dành cho những người yếu tim, đặc biệt là Cuộc phiêu lưu hầm mỏ, Đu quay dây văng...</span>
-                                        <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/3.jpg" className="d-block w-100 img" alt="..." />
-                                        <Link to="/place/2" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
+
+                                <div className="col-lg-4" style={{ backgroundImage: `url("images/bg-adventure-land.jpg")`, padding: "50px 15px 50px 15px" }}>
+                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%" }}>
+                                        <div className="mc_logo_game">
+                                            <img style={{ maxWidth: "100%", height: "auto" }} src="images/logo-adventure-land.jpg" className="" alt="..." />
+                                        </div>
+                                        <div className="tg_desc_game">
+                                            <p>Thỏa sức chinh phục các trò chơi cảm giác mạnh với độ thử thách không dành cho những người "yếu" bóng vía. Các trò chơi đặc sắc: Tháp rơi tự do, Bật nhảy Bungee...</p>
+                                        </div>
+                                        <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "200px" }}>
+                                            <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/3.jpg" alt="..." />
+                                        </div>
+                                        <Link to="/place/1" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4" >
-                                    <img src="images/bg-tropical-paradise.jpg" className="d-block w-100" alt="..." style={{ height: "100%" }} />
-                                    <div className="carousel-caption" style={{ display: "flex", flexDirection: "column", alignItems: "center", height: "100%", top: "10%" }}>
-                                        <img style={{ marginBottom: "10px", display: "inline-block" }} src="images/logo-tropical-paradise.jpg" className="" alt="..." />
-                                        <span style={{ color: "white", marginBottom: "10px" }}>Thời gian mở cửa: 09:00 - 17:30 Thiên đường nhiệt đới nóng bỏng với công viên nước ngọt trên biển đầu tiên và duy nhất tại Việt Nam, Vịnh phao nổi 4.200m2 lớn nhất thế giới và hàng loạt trò chơi kỳ thú.</span>
-                                        <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/5.jpg" className="d-block w-100 img" alt="..." />
-                                        <Link to="/place/3" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <div className="row">
-                                <div className="col-lg-4" >
-                                    <img src="images/bg-world-garden.jpg" className="d-block w-100" alt="..." style={{ height: "100%" }} />
-                                    <div className="carousel-caption" style={{ display: "flex", flexDirection: "column", alignItems: "center", height: "100%", top: "10%" }}>
-                                        <img style={{ marginBottom: "10px", display: "inline-block" }} src="images/logo-world-garden.jpg" className="" alt="..." />
-                                        <span style={{ color: "white", marginBottom: "10px" }}>Mục sở thị các bộ sưu tập "kỳ hoa dị thảo" khổng lồ đến từ 5 châu được tái hiện trong những "tiểu vũ trụ" thực vật tràn đầy nhựa sống.</span>
-                                        <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/7.jpg" className="d-block w-100 img" alt="..." />
-                                        <Link to="/place/4" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4" >
-                                    <img src="images/bg-sea-world.jpg" className="d-block w-100" alt="..." style={{ height: "100%" }} />
-                                    <div className="carousel-caption" style={{ display: "flex", flexDirection: "column", alignItems: "center", height: "100%", top: "10%" }}>
-                                        <img style={{ marginBottom: "10px", display: "inline-block" }} src="images/logo-sea-world.jpg" className="" alt="..." />
-                                        <span style={{ color: "white", marginBottom: "10px" }}>Lạc bước vào thế giới cổ tích lung linh như một giấc mơ, và ẩn chứa những trò chơi mạo hiểm không thể bỏ lỡ như siêu phẩm Tata show, Zipline đạt 3 kỷ lục, Đường lượn nhớ đời...</span>
-                                        <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/8.jpg" className="d-block w-100 img" alt="..." />
-                                        <Link to="/place/5" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4" >
-                                    <img src="images/bg-sea-world.jpg" className="d-block w-100" alt="..." style={{ height: "100%" }} />
-                                    <div className="carousel-caption" style={{ display: "flex", flexDirection: "column", alignItems: "center", height: "100%", top: "10%" }}>
-                                        <img style={{ marginBottom: "10px", display: "inline-block" }} src="images/logo-sea-world.jpg" className="" alt="..." />
-                                        <span style={{ color: "white", marginBottom: "10px" }}>Lạc bước vào thế giới cổ tích lung linh như một giấc mơ, và ẩn chứa những trò chơi mạo hiểm không thể bỏ lỡ như siêu phẩm Tata show, Zipline đạt 3 kỷ lục, Đường lượn nhớ đời...</span>
-                                        <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/8.jpg" className="d-block w-100 img" alt="..." />
-                                        <Link to="/place/6" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
+                                <div className="col-lg-4" style={{ backgroundImage: `url("images/bg-safari.jpg")`, padding: "50px 15px 50px 15px", margin: "-10px" }}>
+                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%" }}>
+                                        <div className="mc_logo_game">
+                                            <img style={{ maxWidth: "100%", height: "auto" }} src="images/logo-safari.jpg" className="" alt="..." />
+                                        </div>
+                                        <div className="tg_desc_game">
+                                            <p>Là nơi bạn có thể khám phá đời sống hoang dã thu nhỏ giữa lòng VinWonders Nha Trang. Đây còn là nhà cho các loài vật khác như hươu cao cổ, hà mã, hồng hạc và hổ bengal quý hiếm.</p>
+                                        </div>
+                                        <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "200px" }}>
+                                            <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/7.jpg" alt="..." />
+                                        </div>
+                                        <Link to="/place/1" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true" style={{width: "40px", height: "40px"}}/>
+                        <span className="carousel-control-prev-icon" aria-hidden="true" style={{ width: "40px", height: "40px" }} />
                         <span className="sr-only">Previous</span>
                     </a>
                     <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true" style={{width: "40px", height: "40px"}}/>
+                        <span className="carousel-control-next-icon" aria-hidden="true" style={{ width: "40px", height: "40px" }} />
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
