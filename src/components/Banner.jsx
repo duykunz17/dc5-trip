@@ -121,11 +121,11 @@ class Banner extends Component {
                         }
                     </div>
                     <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true" style={{ width: "40px", height: "40px" }} />
+                        <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px", transform: 'rotate(180deg)' }} />
                         <span className="sr-only">Previous</span>
                     </a>
                     <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true" style={{ width: "40px", height: "40px" }} />
+                        <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px" }} />
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
