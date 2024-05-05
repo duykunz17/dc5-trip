@@ -7,37 +7,43 @@ const carouselItems = [
         backgroundImage: 'url("images/bg-fairy-land.jpg")',
         logo: 'images/logo-fairy-land.jpg',
         description: 'Bước chân vào xử sở thần tiên, trải nghiệm các trò chơi trong nhà cho gia đình. Và không thể bỏ qua siêu phẩm Zipline và Đường lượn nhớ đời nếu bạn là tín đồ của cảm giác mạnh',
-        imageSrc: 'images/1.jpg'
+        imageSrc: 'images/vinpearl/fairy-land/fairy-land.jpg',
+        urlDetail: '/place/fairy-land'
     },
     {
         backgroundImage: 'url("images/bg-adventure-land.jpg")',
         logo: 'images/logo-adventure-land.jpg',
         description: 'Thỏa sức chinh phục các trò chơi cảm giác mạnh với độ thử thách không dành cho những người "yếu" bóng vía. Các trò chơi đặc sắc: Tháp rơi tự do, Bật nhảy Bungee...',
-        imageSrc: 'images/3.jpg'
+        imageSrc: 'images/vinpearl/adventure-land/adventure-land.jpg',
+        urlDetail: '/place/adventure-land'
     },
     {
         backgroundImage: 'url("images/bg-safari.jpg")',
-        logo: 'images/logo-safari.jpg',
+        logo: 'images/vinpearl/kings-garden/logo_kinggarden.png',
         description: 'Là nơi bạn có thể khám phá đời sống hoang dã thu nhỏ giữa lòng VinWonders Nha Trang. Đây còn là nhà cho các loài vật khác như hươu cao cổ, hà mã, hồng hạc và hổ bengal quý hiếm.',
-        imageSrc: 'images/7.jpg'
+        imageSrc: 'images/vinpearl/kings-garden/content_kinggarden.jpg',
+        urlDetail: '/place/kings-garden'
     },
     {
-        backgroundImage: 'url("images/bg-fairy-land.jpg")',
-        logo: 'images/logo-fairy-land.jpg',
-        description: 'Bước chân vào xử sở thần tiên, trải nghiệm các trò chơi trong nhà cho gia đình. Và không thể bỏ qua siêu phẩm Zipline và Đường lượn nhớ đời nếu bạn là tín đồ của cảm giác mạnh',
-        imageSrc: 'images/1.jpg'
+        backgroundImage: 'url("images/bg-world-garden.jpg")',
+        logo: 'images/logo-world-garden.jpg',
+        description: 'Được mệnh danh là khu vườn địa đàng đẹp nhất VinWonders Nha Trang. Khi bước chân vào nơi đây chắc chắn bạn sẽ ngỡ ngàng và tưởng chừng như đang lạc vào xứ sở thần tiên đầy hoa thơm cỏ lạ.',
+        imageSrc: 'images/vinpearl/worlds-garden/worlds-garden.jpg',
+        urlDetail: '/place/worlds-garden'
     },
     {
-        backgroundImage: 'url("images/bg-adventure-land.jpg")',
-        logo: 'images/logo-adventure-land.jpg',
-        description: 'Thỏa sức chinh phục các trò chơi cảm giác mạnh với độ thử thách không dành cho những người "yếu" bóng vía. Các trò chơi đặc sắc: Tháp rơi tự do, Bật nhảy Bungee...',
-        imageSrc: 'images/3.jpg'
+        backgroundImage: 'url("images/bg-sea-world.jpg")',
+        logo: 'images/logo-sea-world.jpg',
+        description: 'Khám phá hệ sinh thái biển lung linh, kỳ bí nơi hơn 30.000 sinh vật biển cư ngụ và chiêm ngưỡng màn biểu diễn uyển chuyển của những nàng tiên cá xinh đẹp',
+        imageSrc: 'images/vinpearl/sea-world/content_seaworld.jpg',
+        urlDetail: '/place/sea-world'
     },
     {
-        backgroundImage: 'url("images/bg-safari.jpg")',
-        logo: 'images/logo-safari.jpg',
+        backgroundImage: 'url("images/bg-tropical-paradise.jpg")',
+        logo: 'images/logo-tropical-paradise.jpg',
         description: 'Là nơi bạn có thể khám phá đời sống hoang dã thu nhỏ giữa lòng VinWonders Nha Trang. Đây còn là nhà cho các loài vật khác như hươu cao cổ, hà mã, hồng hạc và hổ bengal quý hiếm.',
-        imageSrc: 'images/7.jpg'
+        imageSrc: 'images/vinpearl/tropical-paradise/tropical-paradise.jpg',
+        urlDetail: '/place/tropical-paradise'
     }
 ];
 
@@ -91,9 +97,7 @@ class Banner extends Component {
                                                 <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "200px" }}>
                                                     <img style={{ borderRadius: "10px", marginBottom: "10px" }} src={item.imageSrc} alt="..." />
                                                 </div>
-
-                                                <Link to="/place/1" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
-
+                                                <Link to={item.urlDetail} className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -114,7 +118,7 @@ class Banner extends Component {
                                                         <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "200px" }}>
                                                             <img style={{ borderRadius: "10px", marginBottom: "10px" }} src={item.imageSrc} alt="..." />
                                                         </div>
-                                                        <Link to="/place/1" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
+                                                        <Link to={item.urlDetail} className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
                                                     </div>
                                                 </div>
                                             ))}
