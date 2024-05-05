@@ -1,12 +1,48 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 const trips = [
-    { imageSrc: 'images/1.png' },
-    { imageSrc: 'images/2.png' },
-    { imageSrc: 'images/3.png' },
-    { imageSrc: 'images/1.png' },
-    { imageSrc: 'images/2.png' },
-    { imageSrc: 'images/3.png' },
+    {
+        title: 'Biểu diễn Tata Show',
+        subTitle: '19:30 - 20:10',
+        imageSrc: 'images/sukiennoibat/Event1/logo1.jpeg',
+        location: 'QUẢNG TRƯỜNG THẦN THOẠI',
+        urlDetail: '/event/1'
+    },
+    {
+        title: 'Biểu diễn nhạc nước',
+        subTitle: '19:00 - 19:15',
+        imageSrc: 'images/sukiennoibat/Event2/logo2.jpeg',
+        location: 'SÂN KHẤU NHẠC NƯỚC',
+        urlDetail: '/event/2'
+    },
+    {
+        title: 'Biểu diễn cho cá ăn - Nàng tiên cá',
+        subTitle: '10:00 - 10:15 | 17:00 - 17:15 | 11:00 - 11:10 | 15:00 - 15:10',
+        imageSrc: 'images/sukiennoibat/Event3/logo3.jpeg',
+        location: 'CUNG ĐIỆN HẢI VƯƠNG',
+        urlDetail: '/event/3'
+    },
+    {
+        title: 'Biểu diễn chim',
+        subTitle: '11:00 - 11:20 | 15:00 - 15:20',
+        imageSrc: 'images/sukiennoibat/Event4/logo4.jpeg',
+        location: 'SÂN KHẤU BIỂU DIỄN CHIM - VƯỜN QUÝ VƯƠNG',
+        urlDetail: '/event/4'
+    },
+    {
+        title: 'Vũ điệu Thổ dân',
+        subTitle: '10:40 - 10:50 | 16:00 - 16:10',
+        imageSrc: 'images/sukiennoibat/Event5/logo5.jpeg',
+        location: 'VƯỜN QUÝ VƯƠNG',
+        urlDetail: '/event/5'
+    },
+    {
+        title: 'M.O.N.T.A',
+        subTitle: '10:00 - 10:10 | 15:00 - 15:100',
+        imageSrc: 'images/sukiennoibat/Event6/logo6.jpeg',
+        location: 'QUẢNG TRƯỜNG ĐẠI DƯƠNG',
+        urlDetail: '/event/6'
+    },
 ];
 class RecentTrip extends Component {
     constructor(props) {
@@ -51,22 +87,21 @@ class RecentTrip extends Component {
                                 {
                                     isMobile ? trips.map((item, index) => (
                                         <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
-                                            <div className="row" style={{ margin: 0, textAlign: "center", display: "flex", justifyContent: "space-around" }}>
+                                            <div className="row" style={{ margin: 0, display: "flex", justifyContent: "space-around" }}>
                                                 <div className="col-lg-4" style={{ backgroundImage: item.backgroundImage, padding: "50px 15px 50px 15px", margin: "-10px" }}>
                                                     <div className="single_trip">
                                                         <div className="thumb">
-                                                            <img src={item.imageSrc} alt="" />
+                                                            <img src={item.imageSrc} alt=""/>
                                                         </div>
                                                         <div className="info">
-                                                            <div className="date">
-                                                                <span>Oct 12, 2019</span>
+                                                            <h3>{item.title}</h3>
+                                                            <h5>{item.subTitle}</h5>
+                                                            <div className="location" style={{minHeight: "50px"}}>
+                                                                <img src="images/icon-location.webp"></img> &nbsp;
+                                                                <span style={{ color: "#dc502c" }}>{item.location}</span>
                                                             </div>
-                                                            <Link to="">
-                                                                <h3>Journeys Are Best Measured In
-                                                                    New Friends</h3>
-                                                            </Link>
                                                             <div style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}>
-                                                                <Link to='/trip' className="boxed-btn4" >Xem thêm</Link>
+                                                                <Link to={item.urlDetail} className="boxed-btn4" >Xem thêm</Link>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -75,23 +110,22 @@ class RecentTrip extends Component {
                                         </div>)) :
                                         groupedItems.map((group, index) => (
                                             <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
-                                                <div className="row" style={{ margin: 0, textAlign: "center", display: "flex", justifyContent: "space-between" }}>
+                                                <div className="row" style={{ margin: 0, display: "flex", justifyContent: "space-between" }}>
                                                     {group.map((item, idx) => (
                                                         <div key={idx} className="col-lg-4">
                                                             <div className="single_trip">
                                                                 <div className="thumb">
-                                                                    <img src={item.imageSrc} alt="" />
+                                                                    <img src={item.imageSrc} alt="" style={{height: "233px", maxWidth: "100%"}}/>
                                                                 </div>
                                                                 <div className="info">
-                                                                    <div className="date">
-                                                                        <span>Oct 12, 2019</span>
+                                                                    <h4>{item.title}</h4>
+                                                                    <h6>{item.subTitle}</h6>
+                                                                    <div className="location" style={{minHeight: "50px"}}>
+                                                                        <img src="images/icon-location.webp"></img> &nbsp;
+                                                                        <span style={{ color: "#dc502c" }}>{item.location}</span>
                                                                     </div>
-                                                                    <Link to="">
-                                                                        <h3>Journeys Are Best Measured In
-                                                                            New Friends</h3>
-                                                                    </Link>
                                                                     <div style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}>
-                                                                        <Link to='/trip' className="boxed-btn4" >Xem thêm</Link>
+                                                                        <Link to={item.urlDetail} className="boxed-btn4" >Xem thêm</Link>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -101,7 +135,6 @@ class RecentTrip extends Component {
                                             </div>
                                         ))
                                 }
-
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleCaptions2" role="button" data-slide="prev">
                                 <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px", transform: 'rotate(180deg)' }} />
