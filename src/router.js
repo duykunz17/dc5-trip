@@ -15,11 +15,20 @@ import PostPage from './views/PostPage';
 import NewFeedPage from './views/NewFeedPage';
 import PostDetailPage from './views/PostDetailPage';
 import DestinationDetailPage from './views/DestinationDetailPage';
-import Place1 from './views/Place1';
-import Place2 from './views/Place2';
-import Place3 from './views/Place3';
 import TripPage from './views/TripPage';
 import ContactPage from './views/ContactPage';
+import FairyLand from './views/FairyLand';
+import AdventureLand from './views/AdventureLand';
+import KingsGarden from './views/KingsGarden';
+import WorldsGarden from './views/WorldsGarden';
+import SeaWorld from './views/SeaWorld';
+import TropicalParadise from './views/TropicalParadise';
+import Event1 from './views/Event1';
+import Event2 from './views/Event2';
+import Event3 from './views/Event3';
+import Event4 from './views/Event4';
+import Event5 from './views/Event5';
+import Event6 from './views/Event6';
 
 
 const ROUTERS = [
@@ -64,19 +73,64 @@ const ROUTERS = [
         main: () => <ContactPage/>
     },
     {
-        path: '/place/1',
+        path: '/place/fairy-land',
         exact: true,
-        main: () => <Place1 />
+        main: () => <FairyLand />
     },
     {
-        path: '/place/2',
+        path: '/place/adventure-land',
         exact: true,
-        main: () => <Place2 />
+        main: () => <AdventureLand />
     },
     {
-        path: '/place/3',
+        path: '/place/kings-garden',
         exact: true,
-        main: () => <Place3 />
+        main: () => <KingsGarden />
+    },
+    {
+        path: '/place/worlds-garden',
+        exact: true,
+        main: () => <WorldsGarden />
+    },
+    {
+        path: '/place/sea-world',
+        exact: true,
+        main: () => <SeaWorld />
+    },
+    {
+        path: '/place/tropical-paradise',
+        exact: true,
+        main: () => <TropicalParadise />
+    },
+    {
+        path: '/event/1',
+        exact: true,
+        main: () => <Event1 />
+    },
+    {
+        path: '/event/2',
+        exact: true,
+        main: () => <Event2 />
+    },
+    {
+        path: '/event/3',
+        exact: true,
+        main: () => <Event3 />
+    },
+    {
+        path: '/event/4',
+        exact: true,
+        main: () => <Event4 />
+    },
+    {
+        path: '/event/5',
+        exact: true,
+        main: () => <Event5 />
+    },
+    {
+        path: '/event/6',
+        exact: true,
+        main: () => <Event6 />
     },
     {
         path: '/place/destination/:id',
