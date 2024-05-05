@@ -8,7 +8,7 @@ class Event5 extends Component {
             <div>
                 <Header/>
                 <div>
-                    <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/sukiennoibat/Event5/Logo5.jpeg)` }}>
+                    <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/sukiennoibat/Event5/logo5.jpeg)` }}>
                         <div className="destination_text text-center">
                             <h3>Vũ điệu Thổ dân</h3>
                         </div>
