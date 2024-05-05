@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { Grid, Paper, Typography, Button } from '@material-ui/core';
 
 const dummyArray = [
-    { backgroundImage: 'url("images/bg-fairy-land.jpg")', logo: 'images/logo-fairy-land.jpg', description: 'Bước chân vào xử sở thần tiên, trải nghiệm các trò chơi trong nhà cho gia đình.' },
-    { backgroundImage: 'url("images/bg-adventure-land.jpg")', logo: 'images/logo-adventure-land.jpg', description: 'Thỏa sức chinh phục các trò chơi cảm giác mạnh với độ thử thách không dành cho những người "yếu" bóng vía.' },
-    { backgroundImage: 'url("images/bg-safari.jpg")', logo: 'images/logo-safari.jpg', description: 'Là nơi bạn có thể khám phá đời sống hoang dã thu nhỏ giữa lòng VinWonders Nha Trang.' },
+    { backgroundImage: 'url("images/bg-fairy-land.jpg")', logo: 'images/logo-fairy-land.jpg', description: 'Bước chân vào xử sở thần tiên, trải nghiệm các trò chơi trong nhà cho gia đình.', url: '/place/fairy-land' },
+    { backgroundImage: 'url("images/bg-adventure-land.jpg")', logo: 'images/logo-adventure-land.jpg', description: 'Thỏa sức chinh phục các trò chơi cảm giác mạnh với độ thử thách không dành cho những người "yếu" bóng vía.', url: '/place/adventure-land' },
+    { backgroundImage: 'url("images/bg-safari.jpg")', logo: 'images/logo-safari.jpg', description: 'Là nơi bạn có thể khám phá đời sống hoang dã thu nhỏ giữa lòng VinWonders Nha Trang.', url: '/place/safari' },
 ];
 
 const Banner = () => {
@@ -84,7 +84,7 @@ const Banner = () => {
                                                 <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "50vh" }}>
                                                     <img style={{ borderRadius: "10px", marginBottom: "10px", maxWidth: "100%", height: "auto" }} src={`images/${index + 1}.jpg`} alt="..." />
                                                 </div>
-                                                <Button component={Link} to="/place/1" variant="contained" color="primary" style={{ padding: "15px 20px" }}>Khám phá ngay</Button>
+                                                <Button component={Link} to={item.url} variant="contained" color="primary" style={{ padding: "15px 20px" }}>Khám phá ngay</Button>
                                             </div>
                                         </Paper>
                                     </Grid>
