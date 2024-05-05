@@ -1,78 +1,107 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Grid, Paper, Typography, Button } from '@material-ui/core';
 
-class Banner extends Component {
-    render() {
-        return (
-            <div className='container'>
-                <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
-                    <ol className="carousel-indicators">
-                        <li data-target="#carouselExampleCaptions" data-slide-to={0} className="active" />
-                        <li data-target="#carouselExampleCaptions" data-slide-to={1} />
-                        {/* <li data-target="#carouselExampleCaptions" data-slide-to={2} /> */}
-                    </ol>
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <div className="row" style={{ margin: 0, textAlign: "center", display: "flex", justifyContent: "space-around" }}>
-                                <div className="col-lg-4" style={{ backgroundImage: `url("images/bg-fairy-land.jpg")`, padding: "50px 15px 50px 15px", margin: "-10px" }}>
-                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%" }}>
-                                        <div className="mc_logo_game">
-                                            <img style={{ maxWidth: "100%", height: "auto" }} src="images/logo-fairy-land.jpg" className="" alt="..." />
-                                        </div>
-                                        <div className="tg_desc_game">
-                                            <p>Bước chân vào xử sở thần tiên, trải nghiệm các trò chơi trong nhà cho gia đình. Và không thể bỏ qua siêu phẩm Zipline và Đường lượn nhớ đời nếu bạn là tín đồ của cảm giác mạnh</p>
-                                        </div>
-                                        <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "200px" }}>
-                                            <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/1.jpg" alt="..." />
-                                        </div>
-                                        <Link to="/place/1" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
-                                    </div>
-                                </div>
+const dummyArray = [
+    { backgroundImage: 'url("images/bg-fairy-land.jpg")', logo: 'images/logo-fairy-land.jpg', description: 'Bước chân vào xử sở thần tiên, trải nghiệm các trò chơi trong nhà cho gia đình.' },
+    { backgroundImage: 'url("images/bg-adventure-land.jpg")', logo: 'images/logo-adventure-land.jpg', description: 'Thỏa sức chinh phục các trò chơi cảm giác mạnh với độ thử thách không dành cho những người "yếu" bóng vía.' },
+    { backgroundImage: 'url("images/bg-safari.jpg")', logo: 'images/logo-safari.jpg', description: 'Là nơi bạn có thể khám phá đời sống hoang dã thu nhỏ giữa lòng VinWonders Nha Trang.' },
+];
 
-                                <div className="col-lg-4" style={{ backgroundImage: `url("images/bg-adventure-land.jpg")`, padding: "50px 15px 50px 15px" }}>
-                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%" }}>
-                                        <div className="mc_logo_game">
-                                            <img style={{ maxWidth: "100%", height: "auto" }} src="images/logo-adventure-land.jpg" className="" alt="..." />
-                                        </div>
-                                        <div className="tg_desc_game">
-                                            <p>Thỏa sức chinh phục các trò chơi cảm giác mạnh với độ thử thách không dành cho những người "yếu" bóng vía. Các trò chơi đặc sắc: Tháp rơi tự do, Bật nhảy Bungee...</p>
-                                        </div>
-                                        <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "200px" }}>
-                                            <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/3.jpg" alt="..." />
-                                        </div>
-                                        <Link to="/place/1" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
-                                    </div>
-                                </div>
+const Banner = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
+    const [itemMobile, setItemMobile] = useState(dummyArray[currentIndex]);
 
-                                <div className="col-lg-4" style={{ backgroundImage: `url("images/bg-safari.jpg")`, padding: "50px 15px 50px 15px", margin: "-10px" }}>
-                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%" }}>
-                                        <div className="mc_logo_game">
-                                            <img style={{ maxWidth: "100%", height: "auto" }} src="images/logo-safari.jpg" className="" alt="..." />
+    const checkIsMobile = () => {
+        const mobile = window.innerWidth <= 600;
+        setIsMobile(mobile);
+    };
+
+    useEffect(() => {
+        checkIsMobile();
+        window.addEventListener('resize', checkIsMobile);
+        return () => {
+            window.removeEventListener('resize', checkIsMobile);
+        };
+    }, []);
+
+    const handleNext = () => {
+        const nextIndex = (currentIndex + 1) % dummyArray.length;
+        setItemMobile(dummyArray[nextIndex]);
+        setCurrentIndex(nextIndex);
+    };
+
+    const handlePrevious = () => {
+        const newIndex = currentIndex - 1;
+        if (newIndex >= 0) {
+            setItemMobile(dummyArray[newIndex]);
+            setCurrentIndex(newIndex);
+        }
+    };
+    console.log('itemMobile', itemMobile);
+    return (
+        <Grid container spacing={3} justify="center">
+            <Grid item xs={12}>
+                <div style={{ position: 'relative' }}>
+                    {isMobile && (
+                        <Typography variant="button" style={{ zIndex: '999', position: 'absolute', top: '50%', left: 0, transform: 'translateY(-50%)', cursor: 'pointer' }} onClick={handlePrevious}>
+                            <span className="carousel-control-prev-icon" aria-hidden="true" style={{ width: "40px", height: "40px" }} />
+                        </Typography>
+                    )}
+
+                    <div style={{ overflowX: 'hidden' }}>
+                        <Grid container spacing={3} style={{ transform: `translateX(-${currentIndex * 100}%)`, transition: 'transform 0.5s ease' }}>
+                            {isMobile ? (
+                                <Grid item xs={12} sm={4}>
+                                    <Paper style={{ padding: "50px 15px 50px 15px", margin: '15px', backgroundImage: itemMobile.backgroundImage, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: '80%' }}>
+                                        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%" }}>
+                                            <div className="mc_logo_game">
+                                                <img style={{ maxWidth: "100%", height: "auto" }} src={itemMobile.logo} alt="..." />
+                                            </div>
+                                            <div className="tg_desc_game">
+                                                <Typography variant='body2'>{itemMobile.description}</Typography>
+                                            </div>
+                                            <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "50vh" }}>
+                                                <img style={{ borderRadius: "10px", marginBottom: "10px", maxWidth: "100%", height: "auto" }}
+                                                    src={`images/${currentIndex + 1}.jpg`} alt="..." />
+                                            </div>
+                                            <Button component={Link} to="/place/1" variant="contained" color="primary" style={{ padding: "15px 20px" }}>Khám phá ngay</Button>
                                         </div>
-                                        <div className="tg_desc_game">
-                                            <p>Là nơi bạn có thể khám phá đời sống hoang dã thu nhỏ giữa lòng VinWonders Nha Trang. Đây còn là nhà cho các loài vật khác như hươu cao cổ, hà mã, hồng hạc và hổ bengal quý hiếm.</p>
-                                        </div>
-                                        <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "200px" }}>
-                                            <img style={{ borderRadius: "10px", marginBottom: "10px" }} src="images/7.jpg" alt="..." />
-                                        </div>
-                                        <Link to="/place/1" className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </Paper>
+                                </Grid>
+                            ) : (
+                                dummyArray.map((item, index) => (
+                                    <Grid item xs={12} sm={4} key={index}>
+                                        <Paper style={{ padding: "50px 15px 50px 15px", margin: '15px', backgroundImage: item.backgroundImage, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: '80%' }}>
+                                            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%" }}>
+                                                <div className="mc_logo_game">
+                                                    <img style={{ maxWidth: "100%", height: "auto" }} src={item.logo} alt="..." />
+                                                </div>
+                                                <div className="tg_desc_game">
+                                                    <Typography variant='body1'>{item.description}</Typography>
+                                                </div>
+                                                <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "50vh" }}>
+                                                    <img style={{ borderRadius: "10px", marginBottom: "10px", maxWidth: "100%", height: "auto" }} src={`images/${index + 1}.jpg`} alt="..." />
+                                                </div>
+                                                <Button component={Link} to="/place/1" variant="contained" color="primary" style={{ padding: "15px 20px" }}>Khám phá ngay</Button>
+                                            </div>
+                                        </Paper>
+                                    </Grid>
+                                ))
+                            )}
+                        </Grid>
                     </div>
-                    <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true" style={{ width: "40px", height: "40px" }} />
-                        <span className="sr-only">Previous</span>
-                    </a>
-                    <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true" style={{ width: "40px", height: "40px" }} />
-                        <span className="sr-only">Next</span>
-                    </a>
+
+                    {isMobile && (
+                        <Typography variant="button" style={{ zIndex: '999', position: 'absolute', top: '50%', right: 0, transform: 'translateY(-50%)', cursor: 'pointer' }} onClick={handleNext}>
+                            <span className="carousel-control-next-icon" aria-hidden="true" style={{ width: "40px", height: "40px" }} />
+                        </Typography>
+                    )}
                 </div>
-            </div>
-        );
-    }
-}
+            </Grid>
+        </Grid>
+    );
+};
 
 export default Banner;
