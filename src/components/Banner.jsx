@@ -126,7 +126,7 @@ class Banner extends Component {
                                                         <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "200px" }}>
                                                             <img style={{ borderRadius: "10px", marginBottom: "10px" }} src={item.imageSrc} alt="..." />
                                                         </div>
-                                                        <Link to={item.urlDetail} className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
+                                                        <Link to={item.urlDetail} className="boxed-btn3" onClick={this.scrollToTop} style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
                                                     </div>
                                                 </div>
                                             ))}
