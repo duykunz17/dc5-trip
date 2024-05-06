@@ -31,7 +31,28 @@ const itemData = [
 ];
 
 class Utilities extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isMobile: false,
+        };
+    }
+    componentDidMount() {
+        this.checkIsMobile();
+        window.addEventListener('resize', this.checkIsMobile);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.checkIsMobile);
+    }
+
+    checkIsMobile = () => {
+        const isMobile = window.innerWidth <= 900; // Adjust the breakpoint as needed
+        this.setState({ isMobile });
+    };
+
     render() {
+        const { isMobile } = this.state;
         return (
             <div className="travel_variation_area">
                 <div className="container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', overflow: 'hidden', flexDirection: 'column' }}>
@@ -43,7 +64,7 @@ class Utilities extends Component {
                         </div>
                     </div>
 
-                    <ImageList rowHeight={250} className={{ width: 500, height: 450 }} cols={3}>
+                    <ImageList rowHeight={250} className={{ width: 500, height: 450 }} cols={isMobile ? 1 : 3}>
                         {itemData.map((item) => (
                             <ImageListItem key={item.img} cols={item.cols || 1}>
                                 <img src={item.img} alt={item.title} />

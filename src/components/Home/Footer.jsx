@@ -18,7 +18,7 @@ class Footer extends Component {
                                     <p><i className="fa fa-envelope"></i>  contact@travelo.com.vn</p>
                                 </div>
                             </div>
-                            <div className="col-xl-2 col-md-6 col-lg-2">
+                            <div className="col-xl-3 col-md-6 col-lg-3">
                                 <div className="footer_widget">
                                     <h3 className="footer_title" style={{marginLeft:'8px'}}>
                                         Mạng xã hội
@@ -49,7 +49,7 @@ class Footer extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-md-6 col-lg-3">
+                            {/* <div className="col-xl-3 col-md-6 col-lg-3">
                                 <div className="footer_widget">
                                     <h3 className="footer_title"> Địa điểm </h3>
                                     <ul className="links double_links">
@@ -63,7 +63,7 @@ class Footer extends Component {
                                         <li><Link to=''>Đà Nẵng</Link></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="col-xl-3 col-md-6 col-lg-3">
                                 <div className="footer_widget">
                                     <h3 className="footer_title"> Hình ảnh nổi bật </h3>
