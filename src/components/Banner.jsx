@@ -67,6 +67,14 @@ class Banner extends Component {
         const isMobile = window.innerWidth <= 900; // Adjust the breakpoint as needed
         this.setState({ isMobile });
     };
+    
+    scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // For smooth scrolling
+        });
+    };
+
     render() {
         const { isMobile } = this.state;
         const groupedItems = [];
@@ -97,7 +105,7 @@ class Banner extends Component {
                                                 <div className="mc_game_select" style={{ width: "100%", display: "inline-block", margin: "0 0 20px", height: "200px" }}>
                                                     <img style={{ borderRadius: "10px", marginBottom: "10px" }} src={item.imageSrc} alt="..." />
                                                 </div>
-                                                <Link to={item.urlDetail} className="boxed-btn3" style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
+                                                <Link to={item.urlDetail} className="boxed-btn3" onClick={this.scrollToTop} style={{ padding: "15px 20px" }}>Khám phá ngay</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -128,14 +136,29 @@ class Banner extends Component {
 
                         }
                     </div>
-                    <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                        <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px", transform: 'rotate(180deg)' }} />
-                        <span className="sr-only">Previous</span>
-                    </a>
-                    <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                        <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px" }} />
-                        <span className="sr-only">Next</span>
-                    </a>
+                    {
+                        isMobile ? <div>
+                            <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px", transform: 'rotate(180deg)' }} />
+                                <span className="sr-only">Previous</span>
+                            </a>
+                            <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next" >
+                                <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px" }} />
+                                <span className="sr-only">Next</span>
+                            </a>
+                        </div> : <div>
+                            <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev" style={{ position: 'absolute', left: '-150px' }}>
+                                <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px", transform: 'rotate(180deg)' }} />
+                                <span className="sr-only">Previous</span>
+                            </a>
+                            <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next" style={{ position: 'absolute', right: '-150px' }}>
+                                <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px" }} />
+                                <span className="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                    }
+
                 </div>
             </div>
         );
