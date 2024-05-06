@@ -29,6 +29,8 @@ import Event3 from './views/Event3';
 import Event4 from './views/Event4';
 import Event5 from './views/Event5';
 import Event6 from './views/Event6';
+import Gallary from './views/Gallary';
+import MapPage from './views/MapPage';
 
 
 const ROUTERS = [
@@ -65,7 +67,7 @@ const ROUTERS = [
     {
         path: '/trip',
         exact: false,
-        main: () => <TripPage/>
+        main: () => <TripPage />
     },
     {
         path: '/contact',
@@ -131,6 +133,16 @@ const ROUTERS = [
         path: '/event/6',
         exact: true,
         main: () => <Event6 />
+    },
+    {
+        path: '/gallary',
+        exact: true,
+        main: () => <Gallary />
+    },
+    {
+        path: '/map',
+        exact: true,
+        main: () => <MapPage />
     },
     {
         path: '/place/destination/:id',

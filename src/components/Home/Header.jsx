@@ -166,10 +166,10 @@ class Header extends Component {
                             <div class="navbar-nav" style={{margin: 20}}>
                                 <li><Link className="nav-item nav-link active" to="/">Trang Chủ</Link></li>
                                 <li>
-                                    <Link className="nav-item nav-link" to="/trip">Địa Điểm</Link>
+                                    <Link className="nav-item nav-link" to="/map">Bản Đồ Vinpearl</Link>
                                 </li>
                                 <li><Link className="nav-item nav-link" to="/trip">Lịch Trình</Link></li>
-                                <li><Link className="nav-item nav-link" to="/contact">Liên Hệ</Link></li>
+                                <li><Link className="nav-item nav-link" to="/gallary">Gợi Ý Checkin</Link></li>
                             </div>
                         </div>
                     </div>
