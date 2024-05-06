@@ -64,6 +64,13 @@ class RecentTrip extends Component {
         const isMobile = window.innerWidth <= 900; // Adjust the breakpoint as needed
         this.setState({ isMobile });
     };
+    
+    scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // For smooth scrolling
+        });
+    };
 
     render() {
         const { isMobile } = this.state;
@@ -83,7 +90,7 @@ class RecentTrip extends Component {
                     </div>
                     <div className="row">
                         <div id="carouselExampleCaptions2" className="carousel slide" data-ride="carousel">
-                            <div className="carousel-inner">
+                            <div className="carousel-inner" style={{ minHeight: "600px" }}>
                                 {
                                     isMobile ? trips.map((item, index) => (
                                         <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
@@ -91,17 +98,17 @@ class RecentTrip extends Component {
                                                 <div className="col-lg-4" style={{ backgroundImage: item.backgroundImage, padding: "50px 15px 50px 15px", margin: "-10px" }}>
                                                     <div className="single_trip">
                                                         <div className="thumb">
-                                                            <img src={item.imageSrc} alt=""/>
+                                                            <img src={item.imageSrc} alt="" />
                                                         </div>
                                                         <div className="info">
                                                             <h3>{item.title}</h3>
                                                             <h5>{item.subTitle}</h5>
-                                                            <div className="location" style={{minHeight: "50px"}}>
+                                                            <div className="location" style={{ minHeight: "50px" }}>
                                                                 <img src="images/icon-location.webp"></img> &nbsp;
                                                                 <span style={{ color: "#dc502c" }}>{item.location}</span>
                                                             </div>
                                                             <div style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}>
-                                                                <Link to={item.urlDetail} className="boxed-btn4" >Xem thêm</Link>
+                                                                <Link to={item.urlDetail} className="boxed-btn4" onClick={this.scrollToTop} >Xem thêm</Link>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -115,12 +122,12 @@ class RecentTrip extends Component {
                                                         <div key={idx} className="col-lg-4">
                                                             <div className="single_trip">
                                                                 <div className="thumb">
-                                                                    <img src={item.imageSrc} alt="" style={{height: "233px", maxWidth: "100%"}}/>
+                                                                    <img src={item.imageSrc} alt="" style={{ height: "233px", maxWidth: "100%" }} />
                                                                 </div>
                                                                 <div className="info">
                                                                     <h4>{item.title}</h4>
                                                                     <h6>{item.subTitle}</h6>
-                                                                    <div className="location" style={{minHeight: "50px"}}>
+                                                                    <div className="location" style={{ minHeight: "50px" }}>
                                                                         <img src="images/icon-location.webp"></img> &nbsp;
                                                                         <span style={{ color: "#dc502c" }}>{item.location}</span>
                                                                     </div>
@@ -136,14 +143,29 @@ class RecentTrip extends Component {
                                         ))
                                 }
                             </div>
-                            <a className="carousel-control-prev" href="#carouselExampleCaptions2" role="button" data-slide="prev">
-                                <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px", transform: 'rotate(180deg)' }} />
-                                <span className="sr-only">Previous</span>
-                            </a>
-                            <a className="carousel-control-next" href="#carouselExampleCaptions2" role="button" data-slide="next">
-                                <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px" }} />
-                                <span className="sr-only">Next</span>
-                            </a>
+                            {
+                                !isMobile ? <div>
+                                    <a className="carousel-control-prev" href="#carouselExampleCaptions2" role="button" data-slide="prev" style={{ position: 'absolute', left: '-150px' }}>
+                                        <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px", transform: 'rotate(180deg)' }} />
+                                        <span className="sr-only">Previous</span>
+                                    </a>
+                                    <a className="carousel-control-next" href="#carouselExampleCaptions2" role="button" data-slide="next" style={{ position: 'absolute', right: '-150px' }}>
+                                        <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px" }} />
+                                        <span className="sr-only">Next</span>
+                                    </a>
+                                </div> :
+                                    <div>
+                                        <a className="carousel-control-prev" href="#carouselExampleCaptions2" role="button" data-slide="prev" >
+                                            <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px", transform: 'rotate(180deg)' }} />
+                                            <span className="sr-only">Previous</span>
+                                        </a>
+                                        <a className="carousel-control-next" href="#carouselExampleCaptions2" role="button" data-slide="next" >
+                                            <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px" }} />
+                                            <span className="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                            }
+
                         </div>
                     </div>
                 </div>
