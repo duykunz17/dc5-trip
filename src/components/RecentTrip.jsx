@@ -132,7 +132,7 @@ class RecentTrip extends Component {
                                                                         <span style={{ color: "#dc502c" }}>{item.location}</span>
                                                                     </div>
                                                                     <div style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}>
-                                                                        <Link to={item.urlDetail} className="boxed-btn4" >Xem thêm</Link>
+                                                                        <Link to={item.urlDetail} className="boxed-btn4" onClick={this.scrollToTop} >Xem thêm</Link>
                                                                     </div>
                                                                 </div>
                                                             </div>
