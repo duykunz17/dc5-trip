@@ -1,56 +1,128 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import Header from '../components/Home/Header';
 import Footer from '../components/Home/Footer';
 import { ImageListItem, ImageList } from '@material-ui/core';
 
 const itemData = [
     {
-        img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+        img: 'images/Gallary/1.jpg',
         title: 'Breakfast',
     },
     {
-        img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+        img: 'images/Gallary/2.jpg',
         title: 'Burger',
     },
     {
-        img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+        img: 'images/Gallary/3.jpg',
         title: 'Camera',
     },
     {
-        img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+        img: 'images/Gallary/4.jpg',
         title: 'Coffee',
     },
     {
-        img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+        img: 'images/Gallary/5.jpg',
         title: 'Hats',
     },
     {
-        img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+        img: 'images/Gallary/6.jpg',
         title: 'Honey',
     },
     {
-        img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+        img: 'images/Gallary/7.jpg',
         title: 'Breakfast',
     },
     {
-        img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+        img: 'images/Gallary/8.jpg',
         title: 'Burger',
     },
     {
-        img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+        img: 'images/Gallary/9.jpg',
         title: 'Camera',
     },
     {
-        img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+        img: 'images/Gallary/10.jpg',
         title: 'Coffee',
     },
     {
-        img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+        img: 'images/Gallary/11.jpg',
+        title: 'Breakfast',
+    },
+    {
+        img: 'images/Gallary/12.jpg',
+        title: 'Burger',
+    },
+    {
+        img: 'images/Gallary/13.0.webp',
+        title: 'Camera',
+    },
+    {
+        img: 'images/Gallary/14.jpg',
+        title: 'Coffee',
+    },
+    {
+        img: 'images/Gallary/15.jpg',
         title: 'Hats',
     },
     {
-        img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+        img: 'images/Gallary/16.jpg',
         title: 'Honey',
+    },
+    {
+        img: 'images/Gallary/17.jpg',
+        title: 'Breakfast',
+    },
+    {
+        img: 'images/Gallary/18.jpg',
+        title: 'Burger',
+    },
+    {
+        img: 'images/Gallary/19.jpg',
+        title: 'Camera',
+    },
+    {
+        img: 'images/Gallary/20.jpg',
+        title: 'Coffee',
+    },
+    {
+        img: 'images/Gallary/21.jpg',
+        title: 'Breakfast',
+    },
+    {
+        img: 'images/Gallary/22.webp',
+        title: 'Burger',
+    },
+    {
+        img: 'images/Gallary/23.jpg',
+        title: 'Camera',
+    },
+    {
+        img: 'images/Gallary/24.jpg',
+        title: 'Coffee',
+    },
+    {
+        img: 'images/Gallary/25.jpg',
+        title: 'Hats',
+    },
+    {
+        img: 'images/Gallary/26.jpg',
+        title: 'Honey',
+    },
+    {
+        img: 'images/Gallary/27.jpg',
+        title: 'Breakfast',
+    },
+    {
+        img: 'images/Gallary/28.jpg',
+        title: 'Burger',
+    },
+    {
+        img: 'images/Gallary/29.jpg',
+        title: 'Camera',
+    },
+    {
+        img: 'images/Gallary/30.jpg',
+        title: 'Coffee',
     }
 ];
 
@@ -59,6 +131,7 @@ class Gallary extends Component {
         super(props);
         this.state = {
             isMobile: false,
+            isLoading: false
         };
     }
     componentDidMount() {
@@ -77,18 +150,25 @@ class Gallary extends Component {
 
     render() {
         const { isMobile } = this.state;
+        const { isLoading } = this.state;
+
         return (
             <div>
-                <Header />
-                    {/* <div className="container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', overflow: 'hidden', flexDirection: 'column' }}> */}
-                        <ImageList rowHeight={350} className={{ width: 500, height: 450 }} cols={isMobile ? 1 : 3}>
+                <Header />{
+                    <div className="container" style={{ display: 'flex', justifyContent: 'space-around', overflow: 'hidden', flexDirection: 'column' }}>
+                        <ImageList rowHeight={450} className={{ width: 500, height: 450 }} cols={isMobile ? 1 : 3}>
                             {itemData.map((item) => (
                                 <ImageListItem key={item.img} cols={item.cols || 1}>
-                                    <img src={item.img} alt={item.title} />
+                                    {
+                                        isMobile ? <img src={item.img} alt={item.title} /> :
+                                            <img src={item.img} alt={item.title} style={{ height: '450px' }} />
+                                    }
                                 </ImageListItem>
                             ))}
                         </ImageList>
-                    {/* </div> */}
+                    </div>
+                }
+
                 <Footer />
             </div>
         );
