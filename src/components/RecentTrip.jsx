@@ -145,11 +145,11 @@ class RecentTrip extends Component {
                             </div>
                             {
                                 !isMobile ? <div>
-                                    <a className="carousel-control-prev" href="#carouselExampleCaptions2" role="button" data-slide="prev" style={{ position: 'absolute', left: '-150px' }}>
+                                    <a className="carousel-control-prev" href="#carouselExampleCaptions2" role="button" data-slide="prev" style={{ position: 'absolute', left: '-150px',top: '-150px' }}>
                                         <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px", transform: 'rotate(180deg)' }} />
                                         <span className="sr-only">Previous</span>
                                     </a>
-                                    <a className="carousel-control-next" href="#carouselExampleCaptions2" role="button" data-slide="next" style={{ position: 'absolute', right: '-150px' }}>
+                                    <a className="carousel-control-next" href="#carouselExampleCaptions2" role="button" data-slide="next" style={{ position: 'absolute', right: '-150px',top: '-150px' }}>
                                         <img src="images/next.png" alt="Previous" style={{ width: isMobile ? "50px" : "60px", height: isMobile ? "50px" : "60px" }} />
                                         <span className="sr-only">Next</span>
                                     </a>

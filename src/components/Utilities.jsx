@@ -4,27 +4,15 @@ import { ImageListItem, ImageList } from '@material-ui/core';
 
 const itemData = [
     {
-        img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-        title: 'Breakfast',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-        title: 'Burger',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-        title: 'Camera',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+        img: 'images/Gallary/4.jpg',
         title: 'Coffee',
     },
     {
-        img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+        img: 'images/Gallary/5.jpg',
         title: 'Hats',
     },
     {
-        img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+        img: 'images/Gallary/6.jpg',
         title: 'Honey',
     },
 
@@ -50,6 +38,12 @@ class Utilities extends Component {
         const isMobile = window.innerWidth <= 900; // Adjust the breakpoint as needed
         this.setState({ isMobile });
     };
+    scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // For smooth scrolling
+        });
+    };
 
     render() {
         const { isMobile } = this.state;
@@ -63,11 +57,10 @@ class Utilities extends Component {
                             </div>
                         </div>
                     </div>
-
-                    <ImageList rowHeight={250} className={{ width: 500, height: 450 }} cols={isMobile ? 1 : 3}>
+                    <ImageList rowHeight={450} className={{ width: 500, height: 450 }} cols={isMobile ? 1 : 3}>
                         {itemData.map((item) => (
                             <ImageListItem key={item.img} cols={item.cols || 1}>
-                                <img src={item.img} alt={item.title} />
+                                <img src={item.img} alt={item.title} style={{height: '450px'}} />
                             </ImageListItem>
                         ))}
                     </ImageList>
@@ -75,7 +68,7 @@ class Utilities extends Component {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="more_place_btn text-center" style={{marginTop: "62px"}}>
-                                <Link to='/gallary' className="boxed-btn4" >Xem thêm</Link>
+                                <Link to='/gallary' className="boxed-btn4" onClick={this.scrollToTop}>Xem thêm</Link>
                             </div>
                         </div>
                     </div>
