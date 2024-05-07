@@ -70,32 +70,32 @@ class Footer extends Component {
                                     <div className="instagram_feed">
                                         <div className="single_insta">
                                             <Link to="">
-                                                <img src="../../images/instagram/1.png" alt="" />
+                                                <img src="../../images/Gallary/2.jpg" alt="" />
                                             </Link>
                                         </div>
                                         <div className="single_insta">
                                             <Link to="">
-                                                <img src="../../images/instagram/2.png" alt="" />
+                                                <img src="../../images/Gallary/29.jpg" alt="" />
                                             </Link>
                                         </div>
                                         <div className="single_insta">
                                             <Link to="">
-                                                <img src="../../images/instagram/3.png" alt="" />
+                                                <img src="../../images/Gallary/10.jpg" alt="" />
                                             </Link>
                                         </div>
                                         <div className="single_insta">
                                             <Link to="">
-                                                <img src="../../images/instagram/4.png" alt="" />
+                                                <img src="../../images/Gallary/15.jpg" alt="" />
                                             </Link>
                                         </div>
                                         <div className="single_insta">
                                             <Link to="">
-                                                <img src="../../images/instagram/5.png" alt="" />
+                                                <img src="../../images/Gallary/26.jpg" alt="" />
                                             </Link>
                                         </div>
                                         <div className="single_insta">
                                             <Link to="">
-                                                <img src="../../images/instagram/6.png" alt="" />
+                                                <img src="../../images/Gallary/17.jpg" alt="" />
                                             </Link>
                                         </div>
                                     </div>

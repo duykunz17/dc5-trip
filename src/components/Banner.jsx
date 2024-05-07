@@ -95,7 +95,7 @@ class Banner extends Component {
                                 <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
                                     <div className="row" style={{ margin: 0, textAlign: "center", display: "flex", justifyContent: "space-around" }}>
                                         <div className="col-lg-4" style={{ backgroundImage: item.backgroundImage, padding: "50px 15px 50px 15px", margin: "-10px" }}>
-                                            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%" }}>
+                                            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%"}}>
                                                 <div className="mc_logo_game">
                                                     <img style={{ maxWidth: "100%", height: "auto" }} src={item.logo} className="" alt="..." />
                                                 </div>
@@ -116,7 +116,7 @@ class Banner extends Component {
                                         <div className="row" style={{ margin: 0, textAlign: "center", display: "flex", justifyContent: "space-between" }}>
                                             {group.map((item, idx) => (
                                                 <div key={idx} className="col-lg-4" style={{ backgroundImage: item.backgroundImage, padding: "50px 15px 50px 15px", margin: "-10px" }}>
-                                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%" }}>
+                                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", marginLeft: idx === 0 ? "10px" : "", marginRight: idx === 2 ? "10px" : "" }}>
                                                         <div className="mc_logo_game">
                                                             <img style={{ maxWidth: "100%", height: "auto" }} src={item.logo} className="" alt="..." />
                                                         </div>
