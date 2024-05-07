@@ -64,11 +64,10 @@ class RecentTrip extends Component {
         const isMobile = window.innerWidth <= 900; // Adjust the breakpoint as needed
         this.setState({ isMobile });
     };
-    
+
     scrollToTop = () => {
         window.scrollTo({
             top: 0,
-            behavior: "smooth" // For smooth scrolling
         });
     };
 
