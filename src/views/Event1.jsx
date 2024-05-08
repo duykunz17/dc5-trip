@@ -10,7 +10,6 @@ class Event1 extends Component {
                 <div>
                     <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/sukiennoibat/Event1/header1.jpeg)` }}>
                         <div className="destination_text text-center">
-                            <h3>Biểu diễn Tata Show</h3>
                         </div>
                     </div>
                     <div className="destination_details_info" >

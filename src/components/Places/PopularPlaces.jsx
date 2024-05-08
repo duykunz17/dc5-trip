@@ -35,7 +35,7 @@ class PopularPlaces extends Component {
                     <div className="row justify-content-center">
                         <div className="col-lg-6">
                             <div className="section_title text-center mb_70">
-                                <h3>LÝ DO NHẤT ĐỊNH PHẢI TỚI Vinpearl NHA TRANG</h3>
+                                <h3>LÝ DO NHẤT ĐỊNH PHẢI TỚI VINPEARL NHA TRANG</h3>
                                 <p>Là công viên chủ đề có quy mô hàng đầu tại Việt Nam, nổi bật với 6 phân khu lớn được tổ chức thành 70 hoạt động vui chơi, giải trí, mua sắm, khám phá thiên nhiên,… Vinpearl Nha Trang “thừa sức” làm hài lòng ngay cả du khách khó tính nhất, tạo nên trải nghiệm du lịch tuyệt vời cho gia đình hoặc nhóm bạn và là một trong những nơi bạn phải "đến và trải nghiệm một lần" trong đời</p>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ class PopularPlaces extends Component {
                     <div className="row">
                         <div className="col-lg-12" style={{display:'flex',justifyContent:'center',gap:'10px'}}>
                             <div className="more_place_btn text-center">
-                                <Link to='/trip' className="boxed-btn4" onClick={this.scrollToTop} >Xem thêm</Link>
+                                <Link to='/trip' className="boxed-btn4" onClick={this.scrollToTop} >Xem Thêm</Link>
                             </div>
                             <div className="more_place_btn text-center">
                                 <Link to='/map' className="boxed-btn4" onClick={this.scrollToTop} >Xem Bản Đồ</Link>
