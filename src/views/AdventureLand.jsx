@@ -6,9 +6,9 @@ class AdventureLand extends Component {
     render() {
         return (
             <div>
-                <Header/>
+                <Header />
                 <div>
-                    <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/vinpearl/adventure-land/adland.png)` }}>
+                    <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/vinpearl/adventure-land/adland.jpeg)` }}>
                         <div className="destination_text text-center">
                         </div>
                     </div>
