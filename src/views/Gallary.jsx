@@ -155,7 +155,7 @@ class Gallary extends Component {
         return (
             <div>
                 <Header />{
-                    <div className="container" style={{ display: 'flex', justifyContent: 'space-around', overflow: 'hidden', flexDirection: 'column' }}>
+                    <div className="container" style={{ display: 'flex', justifyContent: 'space-around', overflow: 'hidden', flexDirection: 'column', padding: '5px' }}>
                         <ImageList rowHeight={450} className={{ width: 500, height: 450 }} cols={isMobile ? 1 : 3}>
                             {itemData.map((item) => (
                                 <ImageListItem key={item.img} cols={item.cols || 1}>
