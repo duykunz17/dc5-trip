@@ -8,9 +8,8 @@ class AdventureLand extends Component {
             <div>
                 <Header/>
                 <div>
-                    <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/vinpearl/adventure-land/adventuremind.webp)` }}>
+                    <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/vinpearl/adventure-land/adland.png)` }}>
                         <div className="destination_text text-center">
-                            <h3>Adventure Land</h3>
                         </div>
                     </div>
                     <div className="destination_details_info" >

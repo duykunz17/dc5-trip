@@ -49,7 +49,7 @@ class Utilities extends Component {
         const { isMobile } = this.state;
         return (
             <div className="travel_variation_area">
-                <div className="container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', overflow: 'hidden', flexDirection: 'column' }}>
+                <div className="container" style={{ overflow: 'hidden', flexDirection: 'column' }}>
                     <div className="row justify-content-center">
                         <div className="col-lg-6">
                             <div className="section_title text-center">
@@ -60,14 +60,17 @@ class Utilities extends Component {
                     <ImageList rowHeight={450} className={{ width: 500, height: 450 }} cols={isMobile ? 1 : 3}>
                         {itemData.map((item) => (
                             <ImageListItem key={item.img} cols={item.cols || 1}>
-                                <img src={item.img} alt={item.title} style={{height: '450px'}} />
+                                {
+                                    isMobile ? <img src={item.img} alt={item.title} /> :
+                                        <img src={item.img} alt={item.title} style={{ height: '450px' }} />
+                                }
                             </ImageListItem>
                         ))}
                     </ImageList>
 
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="more_place_btn text-center" style={{marginTop: "62px"}}>
+                            <div className="more_place_btn text-center" style={{ marginTop: "62px" }}>
                                 <Link to='/gallary' className="boxed-btn4" onClick={this.scrollToTop}>Xem thêm</Link>
                             </div>
                         </div>

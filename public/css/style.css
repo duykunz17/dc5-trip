@@ -681,7 +681,7 @@ h3 {
 
 /* line 61, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_section_title.scss */
 .mb_70 {
-  margin-bottom: 62px;
+  /* margin-bottom: 62px; */
 }
 
 @media (max-width: 767px) {
@@ -3557,6 +3557,7 @@ h3 {
 /* line 93, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_video.scss */
 .recent_trip_area .single_trip .info {
   padding-top: 16px;
+  font-family: 'Montserrat-Bold';
 }
 
 /* line 96, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_video.scss */
@@ -6788,7 +6789,7 @@ h6 {
   color: #fff;
   font-size: 14px;
   line-height: 22px;
-  /* font-family: montserrat-semibold; */
+  font-family: Montserrat-Bold;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;

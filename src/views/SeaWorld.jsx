@@ -10,7 +10,6 @@ class SeaWorld extends Component {
                 <div>
                     <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/vinpearl/sea-world/thuy-cung-nha-trang_1.jpg)` }}>
                         <div className="destination_text text-center">
-                            <h3>Sea World</h3>
                         </div>
                     </div>
                     <div className="destination_details_info" >

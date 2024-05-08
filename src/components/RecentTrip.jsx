@@ -17,7 +17,7 @@ const trips = [
     },
     {
         title: 'Biểu diễn cho cá ăn - Nàng tiên cá',
-        subTitle: '10:00 - 10:15 | 17:00 - 17:15 | 11:00 - 11:10 | 15:00 - 15:10',
+        subTitle: '10:00 - 10:15 | 11:00 - 11:10',
         imageSrc: 'images/sukiennoibat/Event3/logo3.jpeg',
         location: 'CUNG ĐIỆN HẢI VƯƠNG',
         urlDetail: '/event/3'
@@ -82,13 +82,13 @@ class RecentTrip extends Component {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-6">
-                            <div className="section_title text-center mb_70">
+                            <div className="section_title text-center">
                                 <h3>SỰ KIỆN KHÔNG THỂ BỎ LỠ</h3>
                             </div>
                         </div>
                     </div>
                     <div className="row">
-                        <div id="carouselExampleCaptions2" className="carousel slide" data-ride="carousel">
+                        <div id="carouselExampleCaptions2" className="carousel slide" data-interval="false">
                             <div className="carousel-inner" style={{ minHeight: "600px" }}>
                                 {
                                     isMobile ? trips.map((item, index) => (
@@ -125,8 +125,8 @@ class RecentTrip extends Component {
                                                                 </div>
                                                                 <div className="info">
                                                                     <h4>{item.title}</h4>
-                                                                    <h6>{item.subTitle}</h6>
-                                                                    <div className="location" style={{ minHeight: "50px" }}>
+                                                                    <h6> {item.subTitle}</h6>
+                                                                    <div className="location" style={{ minHeight: "40px" }}>
                                                                         <img src="images/icon-location.webp"></img> &nbsp;
                                                                         <span style={{ color: "#dc502c" }}>{item.location}</span>
                                                                     </div>
