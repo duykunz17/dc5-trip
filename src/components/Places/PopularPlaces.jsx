@@ -35,8 +35,8 @@ class PopularPlaces extends Component {
                     <div className="row justify-content-center">
                         <div className="col-lg-6">
                             <div className="section_title text-center mb_70">
-                                <h3>LÝ DO NHẤT ĐỊNH PHẢI TỚI VINWONDERS NHA TRANG</h3>
-                                <p>Là công viên chủ đề có quy mô hàng đầu tại Việt Nam, nổi bật với 6 phân khu lớn được tổ chức thành 70 hoạt động vui chơi, giải trí, mua sắm, khám phá thiên nhiên,… VinWonders Nha Trang “thừa sức” làm hài lòng ngay cả du khách khó tính nhất, tạo nên trải nghiệm du lịch tuyệt vời cho gia đình hoặc nhóm bạn và là một trong những nơi bạn phải "đến và trải nghiệm một lần" trong đời</p>
+                                <h3>LÝ DO NHẤT ĐỊNH PHẢI TỚI Vinpearl NHA TRANG</h3>
+                                <p>Là công viên chủ đề có quy mô hàng đầu tại Việt Nam, nổi bật với 6 phân khu lớn được tổ chức thành 70 hoạt động vui chơi, giải trí, mua sắm, khám phá thiên nhiên,… Vinpearl Nha Trang “thừa sức” làm hài lòng ngay cả du khách khó tính nhất, tạo nên trải nghiệm du lịch tuyệt vời cho gia đình hoặc nhóm bạn và là một trong những nơi bạn phải "đến và trải nghiệm một lần" trong đời</p>
                             </div>
                         </div>
                     </div>

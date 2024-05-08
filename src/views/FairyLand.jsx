@@ -61,7 +61,7 @@ class FairyLand extends Component {
                                 <div className="col-lg-8 col-md-9">
                                     <div className="destination_info">
                                         <h3>Đu dây trên không (Zipline)</h3>
-                                        <p>Nếu bạn là một “tín đồ” của các trò chơi cảm giác mạnh thì không nên bỏ qua trải nghiệm đầy thử thách này tại VinWonders Nha Trang đâu nha. Nắm giữ ba kỷ lục: đường trượt dài nhất, dốc nhất và có cú nhảy tiếp đất cao nhất tại Việt Nam, trò chơi đu dây mạo hiểm zipline tại VinWonders Nha Trang sẽ cho bạn cảm giác “bay giữa không trung”, ngắm trọn một vùng biển cả bao la, xanh ngát.</p>
+                                        <p>Nếu bạn là một “tín đồ” của các trò chơi cảm giác mạnh thì không nên bỏ qua trải nghiệm đầy thử thách này tại Vinpearl Nha Trang đâu nha. Nắm giữ ba kỷ lục: đường trượt dài nhất, dốc nhất và có cú nhảy tiếp đất cao nhất tại Việt Nam, trò chơi đu dây mạo hiểm zipline tại Vinpearl Nha Trang sẽ cho bạn cảm giác “bay giữa không trung”, ngắm trọn một vùng biển cả bao la, xanh ngát.</p>
                                         <p>Thời gian hoạt động: 10:00 - 17:00. Đây là trò chơi <strong><em>khá đắt khách</em></strong> vì thường có nhiều người xếp hàng, cho nên bạn hãy tranh thủ thời gian để trải nghiệm nó đầu tiên nhé!</p>
                                         <p><img src="../images/vinpearl/fairy-land/zipline.jpeg" className="d-block w-100" alt="..." /></p>
                                     </div>

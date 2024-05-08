@@ -17,6 +17,14 @@ class TropicalParadise extends Component {
                             <div className="row justify-content-center">
                                 <div className="col-lg-8 col-md-9">
                                     <div className="destination_info">
+                                        <h3>Cổng vào</h3>
+                                         <p><img src="../images/vinpearl/tropical-paradise/congvao.jpg" className="d-block w-100" alt="..." /></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row justify-content-center">
+                                <div className="col-lg-8 col-md-9">
+                                    <div className="destination_info">
                                         <h3>Máng trượt gia đình</h3>
                                         <p>Máng trượt gia đình là trò chơi phù hợp với nhóm 6 thành viên, các bạn sẽ cùng ngồi trên một chiếc phao và vượt qua dòng thác với độ cao 12,5m.</p>
                                         <p><img src="../images/vinpearl/tropical-paradise/mangtruotGiadinh.webp" className="d-block w-100" alt="..." /></p>
@@ -28,7 +36,7 @@ class TropicalParadise extends Component {
                                 <div className="col-lg-8 col-md-9">
                                     <div className="destination_info">
                                         <h3>Đường trượt phao</h3>
-                                        <p>Nếu bạn muốn một mình chinh phục những trò chơi mạo hiểm ở VinWonders Nha Trang thì đường trượt phao tại khu Công viên nước là một trong những trò chơi bạn nhất định phải thử. Ở thử thách này, bạn phải tự mình vượt qua đường trượt uốn lượn cao 12m, gồm 4 máng trượt với rất nhiều vòng cua gắt và có độ dốc “không phải dạng vừa” đâu nha!</p>
+                                        <p>Nếu bạn muốn một mình chinh phục những trò chơi mạo hiểm ở Vinpearl Nha Trang thì đường trượt phao tại khu Công viên nước là một trong những trò chơi bạn nhất định phải thử. Ở thử thách này, bạn phải tự mình vượt qua đường trượt uốn lượn cao 12m, gồm 4 máng trượt với rất nhiều vòng cua gắt và có độ dốc “không phải dạng vừa” đâu nha!</p>
                                         <p><img src="../images/vinpearl/tropical-paradise/duongtruotPhao.webp" className="d-block w-100" alt="..." /></p>
                                     </div>
                                 </div>

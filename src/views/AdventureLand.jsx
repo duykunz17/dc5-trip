@@ -29,7 +29,7 @@ class AdventureLand extends Component {
                                 <div className="col-lg-8 col-md-9">
                                     <div className="destination_info">
                                         <h3>Cuộc phiêu lưu hầm mỏ (Mind Adventure)</h3>
-                                        <p>Ở hầm mỏ bí ẩn, nơi có hàng chục khúc cua ngoạn mục, bạn sẽ được trải nghiệm cuộc phiêu lưu qua lòng núi trên con tàu lao vun vút ở vận tốc lên đến 12,7m/s. Đây chắc chắn sẽ là trải nghiệm đáng nhớ mà bạn đừng bỏ lỡ khi đến VinWonders Nha Trang.</p>
+                                        <p>Ở hầm mỏ bí ẩn, nơi có hàng chục khúc cua ngoạn mục, bạn sẽ được trải nghiệm cuộc phiêu lưu qua lòng núi trên con tàu lao vun vút ở vận tốc lên đến 12,7m/s. Đây chắc chắn sẽ là trải nghiệm đáng nhớ mà bạn đừng bỏ lỡ khi đến Vinpearl Nha Trang.</p>
                                         <p><img src="../images/vinpearl/adventure-land/adventuremind.webp" className="d-block w-100" alt="..." /></p>
                                     </div>
                                 </div>
