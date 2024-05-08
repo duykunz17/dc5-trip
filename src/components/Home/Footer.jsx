@@ -2,6 +2,31 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Footer extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isMobile: false,
+        };
+    }
+    componentDidMount() {
+        this.checkIsMobile();
+        window.addEventListener('resize', this.checkIsMobile);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.checkIsMobile);
+    }
+
+    checkIsMobile = () => {
+        const isMobile = window.innerWidth <= 900; // Adjust the breakpoint as needed
+        this.setState({ isMobile });
+    };
+
+    scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+        });
+    };
     render() {
         return (
             <footer className="footer">
@@ -13,7 +38,6 @@ class Footer extends Component {
                                     <div className="footer_logo">
                                         <Link to=""><img src="../../images/footer_logo.png" alt="footer_logo" /></Link>
                                     </div>
-                                    <p><i className="fa fa-map-marker"></i>  Lầu 8, Tòa nhà TMA Solutions Lab 6 <br />Đường số 10, CVPM Quang Trung, <br/>Phường Tân Chánh Hiệp, Quận 12, Tp. HCM</p><br />
                                     <p><i className="fa fa-phone"></i>  (+84) 585868587</p><br />
                                     <p><i className="fa fa-envelope"></i>  contact@travelo.com.vn</p>
                                 </div>
@@ -26,7 +50,7 @@ class Footer extends Component {
                                     <div className="socail_links">
                                     <ul>
                                         <li>
-                                        <a href="https://www.facebook.com/tmadc5">
+                                        <a>
                                             <i className="fa fa-facebook" />
                                         </a>
                                         </li>
@@ -69,7 +93,7 @@ class Footer extends Component {
                                     <h3 className="footer_title"> Hình ảnh nổi bật </h3>
                                     <div className="instagram_feed">
                                         <div className="single_insta">
-                                            <Link to="">
+                                            <Link to="/gallary"  onClick={this.scrollToTop}>
                                                 <img src="../../images/Gallary/2.jpg" alt="" />
                                             </Link>
                                         </div>

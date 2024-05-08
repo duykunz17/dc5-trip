@@ -10,7 +10,6 @@ class KingsGarden extends Component {
                 <div>
                     <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/vinpearl/kings-garden/header_kingsgarden.jpeg)` }}>
                         <div className="destination_text text-center">
-                            <h3>Kings Garden</h3>
                         </div>
                     </div>
                     <div className="destination_details_info" >

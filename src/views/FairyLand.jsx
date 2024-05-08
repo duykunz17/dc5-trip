@@ -10,7 +10,6 @@ class FairyLand extends Component {
                 <div>
                     <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/vinpearl/fairy-land/fairy-land.jpg)` }}>
                         <div className="destination_text text-center">
-                            <h3>Fairy Land</h3>
                         </div>
                     </div>
                     <div className="destination_details_info" >

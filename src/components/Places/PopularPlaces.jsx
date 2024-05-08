@@ -45,9 +45,12 @@ class PopularPlaces extends Component {
                         {this.props.children}
                     </div>
                     <div className="row">
-                        <div className="col-lg-12">
+                        <div className="col-lg-12" style={{display:'flex',justifyContent:'center',gap:'10px'}}>
                             <div className="more_place_btn text-center">
                                 <Link to='/trip' className="boxed-btn4" onClick={this.scrollToTop} >Xem thêm</Link>
+                            </div>
+                            <div className="more_place_btn text-center">
+                                <Link to='/map' className="boxed-btn4" onClick={this.scrollToTop} >Xem Bản Đồ</Link>
                             </div>
                         </div>
                     </div>

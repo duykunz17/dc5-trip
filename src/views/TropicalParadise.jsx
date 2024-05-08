@@ -8,9 +8,8 @@ class TropicalParadise extends Component {
             <div>
                 <Header/>
                 <div>
-                    <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/vinpearl/tropical-paradise/mangtruotGiadinh.webp)` }}>
+                    <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/vinpearl/tropical-paradise/tropical-paradise.jpeg)` }}>
                         <div className="destination_text text-center">
-                            <h3>Tropical Paradise</h3>
                         </div>
                     </div>
                     <div className="destination_details_info" >

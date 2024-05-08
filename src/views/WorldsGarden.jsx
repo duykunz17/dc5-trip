@@ -10,7 +10,6 @@ class WorldsGarden extends Component {
                 <div>
                     <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/vinpearl/worlds-garden/vuonNhat.jpeg)` }}>
                         <div className="destination_text text-center">
-                            <h3>Worlds Garden</h3>
                         </div>
                     </div>
                     <div className="destination_details_info" >
