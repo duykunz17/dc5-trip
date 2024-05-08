@@ -75,7 +75,7 @@ class FairyLand extends Component {
                                         <p>Sự bức bối của mùa hè đôi khi vắt cạn những dư vị của tuổi trẻ nồng nhiệt. Vậy thì tại sao bạn không chinh phục điều gì đó ngay trong Hè này tại Vinpearl Land! </p>
                                         <p>Với chiều dài 1,760m cùng độ cao chênh lệch 133m giữa hai ga, Đường Trượt Nhớ Đời sẽ là chuyến hành trình thưởng ngoạn và mạo hiểm độc đáo dành riêng cho bạn. Trong chặng đầu của chuyến hành trình, bạn sẽ đi từ ga dưới chân núi để thưởng lãm vẻ đẹp tuyệt tác của vịnh Nha Trang xinh đẹp.
                                         Hãy tự thêm chút “gia vị” vào cuộc sống của mình và vẽ lại chặng hành trình tuổi trẻ bằng những trải ngiệm khó quên. 😊</p>
-                                        <p><img src="../images/vinpearl/fairy-land/duong-luon-nho-doi.jpg" className="d-block w-100" style={{ maxHeight: '500px'}} alt="..." /></p>
+                                        <p><img src="../images/vinpearl/fairy-land/duong-luon-nho-doi.jpg" className="d-block w-100" alt="..." /></p>
                                     </div>
                                 </div>
                             </div>

@@ -18,6 +18,13 @@ const carouselItems = [
         urlDetail: '/place/adventure-land'
     },
     {
+        backgroundImage: 'url("images/bg-sea-world.jpg")',
+        logo: 'images/logo-sea-world.jpg',
+        description: 'Khám phá hệ sinh thái biển lung linh, kỳ bí nơi hơn 30.000 sinh vật biển cư ngụ và chiêm ngưỡng màn biểu diễn uyển chuyển của những nàng tiên cá xinh đẹp',
+        imageSrc: 'images/vinpearl/sea-world/content_seaworld.jpg',
+        urlDetail: '/place/sea-world'
+    },
+    {
         backgroundImage: 'url("images/bg-safari.jpg")',
         logo: 'images/vinpearl/kings-garden/logo_kinggarden.png',
         description: 'Là nơi bạn có thể khám phá đời sống hoang dã thu nhỏ giữa lòng VinWonders Nha Trang. Đây còn là nhà cho các loài vật khác như hươu cao cổ, hà mã, hồng hạc và hổ bengal quý hiếm',
@@ -30,13 +37,6 @@ const carouselItems = [
         description: 'Được mệnh danh là khu vườn địa đàng đẹp nhất VinWonders Nha Trang. Khi bước chân vào nơi đây chắc chắn bạn sẽ ngỡ ngàng và tưởng chừng như đang lạc vào xứ sở thần tiên đầy hoa thơm cỏ lạ',
         imageSrc: 'images/vinpearl/worlds-garden/worlds-garden.jpg',
         urlDetail: '/place/worlds-garden'
-    },
-    {
-        backgroundImage: 'url("images/bg-sea-world.jpg")',
-        logo: 'images/logo-sea-world.jpg',
-        description: 'Khám phá hệ sinh thái biển lung linh, kỳ bí nơi hơn 30.000 sinh vật biển cư ngụ và chiêm ngưỡng màn biểu diễn uyển chuyển của những nàng tiên cá xinh đẹp',
-        imageSrc: 'images/vinpearl/sea-world/content_seaworld.jpg',
-        urlDetail: '/place/sea-world'
     },
     {
         backgroundImage: 'url("images/bg-tropical-paradise.jpg")',
