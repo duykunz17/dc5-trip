@@ -17,9 +17,9 @@ class AdventureLand extends Component {
                             <div className="row justify-content-center">
                                 <div className="col-lg-8 col-md-9">
                                     <div className="destination_info">
-                                        <h3>Tháp rơi tự do</h3>
-                                        <p>Muốn chơi trò mạo hiểm nhưng ngại phải chơi một mình? Vậy thì cứ rủ rê anh chị em hoặc nhóm bạn ngồi “cùng thuyền” và thử ngay trò chơi tháp rơi tự do ở “Vùng đất phiêu lưu” nha!</p>
-                                        <p>Tạm ngưng hoạt động khi thời tiết có mưa. </p>
+                                        <h3>Tháp rơi tự do (Sky Deep)</h3>
+                                        <p>Muốn chơi trò mạo hiểm nhưng ngại phải chơi một mình? Vậy thì cứ rủ rê anh chị em DC5 và thử ngay trò chơi tháp rơi tự do nhé!</p>
+                                        <p>Bắt đầu từ vị trí tại mặt đất, người chơi được nâng lên đến độ cao của một tòa nhà 7 tầng. Tại đây bạn được phóng tầm mắt ngắm nhìn vịnh biển Nha Trang hùng vĩ và bất ngờ tuột dốc tự do đầy kịch tính. </p>
                                         <p><img src="../images/vinpearl/adventure-land/thap-roi-tu-do.jpg" className="d-block w-100" alt="..." /></p>
                                     </div>
                                 </div>
@@ -28,8 +28,8 @@ class AdventureLand extends Component {
                             <div className="row justify-content-center">
                                 <div className="col-lg-8 col-md-9">
                                     <div className="destination_info">
-                                        <h3>Cuộc phiêu lưu hầm mỏ (Mind adventure)</h3>
-                                        <p>Hầm mỏ bí ẩn ở “Adventure Land” cũng là nơi để bạn trải nghiệm cảm giác phiêu lưu kỳ thú. Tại đây bạn sẽ được lượn vòng quanh vách núi nhân tạo, chinh phục nhiều khúc cua ngoạn mục với vận tốc lên đến 12,7m/s.</p>
+                                        <h3>Cuộc phiêu lưu hầm mỏ (Mind Adventure)</h3>
+                                        <p>Ở hầm mỏ bí ẩn, nơi có hàng chục khúc cua ngoạn mục, bạn sẽ được trải nghiệm cuộc phiêu lưu qua lòng núi trên con tàu lao vun vút ở vận tốc lên đến 12,7m/s. Đây chắc chắn sẽ là trải nghiệm đáng nhớ mà bạn đừng bỏ lỡ khi đến Vinpearl Nha Trang.</p>
                                         <p><img src="../images/vinpearl/adventure-land/adventuremind.webp" className="d-block w-100" alt="..." /></p>
                                     </div>
                                 </div>
@@ -39,9 +39,9 @@ class AdventureLand extends Component {
                                 <div className="col-lg-8 col-md-9">
                                     <div className="destination_info">
                                         <h3>Bật nhảy Bungee (Bungee Jumping)</h3>
-                                        <p>Nhắc đến những trò chơi cảm giác mạnh thì không thể không kể đến Bungee! Với những thiết bị hỗ trợ an toàn và hiện đại nhất, bật nhảy bungee là một trò chơi sẽ có thể thỏa niềm đam mê chinh phục độ cao của bạn đấy!</p>
-                                        <p>Trò chơi sẽ dừng nhận khách khi số lượng khách đã xếp hàng đợi hết công suất trong ngày.</p>
-                                        <p><img src="../images/vinpearl/adventure-land/bungeejumping.webp" className="d-block w-100" alt="..." /></p>
+                                        <p>Bật nhảy Bungee là một trong những trò chơi mạo hiểm ở Vinpearl Nha Trang được nhiều du khách yêu thích. Ở trò chơi này, người chơi được buộc dây đai quanh người rồi từ vị trí cao 15m, quăng mình xuống phía dưới. Khi khoảng cách với bề mặt tiếp xúc còn không xa, sợi dây sẽ kéo người chơi giật trở lại.</p>
+                                        <p>Trò chơi với những cú nhảy trên không mạnh mẽ sẽ mang lại cho du khách cảm giác bay bổng, phấn khích và thỏa đam mê chinh phục độ cao.</p>
+                                        <p><img src="../images/vinpearl/adventure-land/bungee.jpg" className="d-block w-100" alt="..." /></p>
                                     </div>
                                 </div>
                             </div>
@@ -49,9 +49,8 @@ class AdventureLand extends Component {
                             <div className="row justify-content-center">
                                 <div className="col-lg-8 col-md-9">
                                     <div className="destination_info">
-                                        <h3>Đu quay dây văng</h3>
-                                        <p>Ở tư thế xoay tròn hoặc xoay nghiêng với độ cao 3m, trò chơi đu quay dây văng sẽ tạo cho bạn cảm giác như đang rơi tự do hoặc bay lượn trong không trung.</p>
-                                        <p>Tạm ngưng hoạt động khi thời tiết có gió và mưa lớn.</p>
+                                        <h3>Đu quay dây văng (Swing Carousel)</h3>
+                                        <p>Đu quay dây văng khiến người chơi có cảm giác đang bay lượn trong không trung và như đang rơi tự do. Trải nghiệm phấn khích này đến từ tư thế xoay tròn hoặc xoay nghiêng của đu quay ở độ cao 3m.</p>
                                         <p><img src="../images/vinpearl/adventure-land/du-quay-day-vang.jpg" className="d-block w-100" alt="..." /></p>
                                     </div>
                                 </div>

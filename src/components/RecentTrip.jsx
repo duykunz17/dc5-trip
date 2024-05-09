@@ -26,7 +26,7 @@ const trips = [
         title: 'Biểu diễn chim',
         subTitle: '11:00 - 11:20 | 15:00 - 15:20',
         imageSrc: 'images/sukiennoibat/Event4/logo4.jpeg',
-        location: 'SÂN KHẤU BIỂU DIỄN CHIM - VƯỜN QUÝ VƯƠNG',
+        location: 'VƯỜN QUÝ VƯƠNG',
         urlDetail: '/event/4'
     },
     {
@@ -83,7 +83,7 @@ class RecentTrip extends Component {
                     <div className="row justify-content-center">
                         <div className="col-lg-6">
                             <div className="section_title text-center">
-                                <h3>SỰ KIỆN KHÔNG THỂ BỎ LỠ</h3>
+                                <h3>SỰ KIỆN NỔI BẬT</h3>
                             </div>
                         </div>
                     </div>

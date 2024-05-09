@@ -17,19 +17,30 @@ class SeaWorld extends Component {
                             <div className="row justify-content-center">
                                 <div className="col-lg-8 col-md-9">
                                     <div className="destination_info">
-                                        <h3>Thế giới đại dương (Sea World)</h3>
-                                        <p>Với vô vàn màu sắc với hai khu vực tham quan là Thuỷ Cung và Cung điện Hải Vương.</p>
-                                        <p>Cung điện Hải Vương là hệ thống đường hầm mái vòm, đi xuyên qua bể sinh sống của hơn 30.000 sinh vật biển. Trong khi đó, khu vực Thuỷ Cung là ngôi nhà khổng lồ của các sinh vật biển từ cá nước ngọt, cá nước mặn đến các loài bò sát. Hãy cẩn thận vì có thể bạn sẽ bị “thôi miên” và không muốn về khi dạo quanh khu thủy cung có diện tích 3.400m2 này đấy!</p>
+                                        <h3>Thủy Cung (Sea World)</h3>
+                                        <p>Hành trình khám phá thủy cung Vinpearl sẽ bắt đầu trong lòng núi nhân tạo, gồm hai tầng được chia theo từng chức năng cụ thể, giúp bạn dễ dàng khám phá. Bạn có thể di chuyển lần lượt theo các khu vực hoặc lựa chọn ngay điểm đến mà mình yêu thích.
+                                            <li>&nbsp; <strong>- Tầng trên:</strong> triển lãm trưng bày những loại bò sát, côn trùng, lưỡng cư phổ biến</li>
+                                            <li>&nbsp; <strong>- Tầng dưới:</strong> với hệ thống đường hầm mái vòm hiện đại, được thiết kế theo dạng bể kính mái vòm rộng lớn. Cách thiết kế này giúp du khách dễ dàng tham quan và tạo cảm giác như đang ở đáy đại dương vô cùng sinh động </li>
+                                        </p>
                                         <p><img src="../images/vinpearl/sea-world/thuycung2.jpeg" className="d-block w-100" alt="..." /></p>
+                                        <p><img src="../images/vinpearl/sea-world/thuycung3.jpg" className="d-block w-100" alt="..." /></p>
                                     </div>
                                 </div>
                             </div>
-
                             <div className="row justify-content-center">
                                 <div className="col-lg-8 col-md-9">
                                     <div className="destination_info">
-                                        <h3>Xem nàng tiên cá biểu diễn</h3>
-                                        <p>Ghé thăm thủy cung, du khách đừng bỏ qua buổi biểu diễn uyển chuyển của những nàng tiên cá xinh đẹp. Các cô gái mặc lên mình những bộ trang phục lộng lẫy rồi hóa thân thành nàng tiên cá bơi lội tự do trong bể kính. Từng động tác nhịp nhàng, uyển chuyển chắc chắn khiến du khách không thể rời mắt. Chương trình biểu diễn nghệ thuật đầy hấp dẫn thu hút rất nhiều bạn nhỏ đến chiêm ngưỡng. </p>
+                                        <h3>Biểu diễn cho cá ăn (10:00 – 10:15)</h3>
+                                        <p>Tại Thủy cung, các thành viên DC5 sẽ được tận mắt xem buổi biểu diễn cho cá ăn đầy ấn tượng giữa lòng đại dương sâu thẳm - nơi cư ngụ của 30.000 sinh vật biển đặc sắc tại hệ thống đường hầm mái vòm đầu tiên ở Việt Nam.</p>
+                                        <p><img src="../images/vinpearl/sea-world/showcaan.jpeg" className="d-block w-100" alt="..." /></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row justify-content-center">
+                                <div className="col-lg-8 col-md-9">
+                                    <div className="destination_info">
+                                        <h3>Xem nàng tiên cá biểu diễn (11:00 – 11:10)</h3>
+                                        <p>Bạn không thể bỏ qua buổi biểu diễn nàng tiên cá hấp dẫn. Các cô gái xinh đẹp sẽ khoác lên mình trang phục lộng lẫy rồi nhập vai thành sinh vật diệu kỳ bơi lượn trong bể kính. Từng động tác uyển chuyển, nhịp nhàng chắc chắn sẽ khiến bạn không khỏi rời mắt. Chương trình biểu diễn nghệ thuật đầy mãn nhãn này không chỉ được lòng người lớn mà còn cả các bạn nhỏ đến tham quan. </p>
                                         <p><img src="../images/vinpearl/sea-world/tiencashow.jpeg" className="d-block w-100" alt="..." /></p>
                                     </div>
                                 </div>

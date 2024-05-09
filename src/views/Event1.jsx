@@ -10,7 +10,6 @@ class Event1 extends Component {
                 <div>
                     <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/sukiennoibat/Event1/header1.jpeg)` }}>
                         <div className="destination_text text-center">
-                            <h3>Biểu diễn Tata Show</h3>
                         </div>
                     </div>
                     <div className="destination_details_info" >
@@ -19,7 +18,7 @@ class Event1 extends Component {
                                 <div className="col-lg-8 col-md-9">
                                     <div className="destination_info">
                                         <h3>Tata Show - Bom tấn thực cảnh 3D tại Việt Nam</h3>
-                                        <p>Một trong sự kiện “nhất định phải xem” sẽ trở thành ký ức tuyệt vời nhất cho mỗi thành viên DC5 khi ghé thăm VinWonders Nha Trang trong mùa hè này.</p>
+                                        <p>Một trong sự kiện “nhất định phải xem” sẽ trở thành ký ức tuyệt vời nhất cho mỗi thành viên DC5 khi ghé thăm Vinpearl Nha Trang trong mùa hè này.</p>
                                         <p><img src="../images/sukiennoibat/Event1/photo1.jpeg" className="d-block w-100" alt="..." /></p>
                                     </div>
                                 </div>

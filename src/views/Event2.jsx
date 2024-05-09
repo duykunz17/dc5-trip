@@ -10,7 +10,6 @@ class Event2 extends Component {
                 <div>
                     <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/sukiennoibat/Event2/logo2.jpeg)` }}>
                         <div className="destination_text text-center">
-                            <h3>Biểu diễn nhạc nước</h3>
                         </div>
                     </div>
                     <div className="destination_details_info" >
