@@ -8,9 +8,8 @@ class Event6 extends Component {
             <div>
                 <Header/>
                 <div>
-                    <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/sukiennoibat/Event6/header6.webp)` }}>
+                    <div className="destination_banner_wrap overlay" style={{ backgroundImage: `url(../images/sukiennoibat/Event6/photo1.webp)` }}>
                         <div className="destination_text text-center">
-                            <h3>M.O.N.T.A</h3>
                         </div>
                     </div>
                     <div className="destination_details_info" >

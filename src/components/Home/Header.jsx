@@ -165,10 +165,8 @@ class Header extends Component {
                         <div className="container-fluid">
                             <div class="navbar-nav" style={{margin: 20}}>
                                 <li><Link className="nav-item nav-link active" to="/">Trang Chủ</Link></li>
-                                <li>
-                                    <Link className="nav-item nav-link" to="/map">Bản Đồ Vinpearl</Link>
-                                </li>
-                                <li><Link className="nav-item nav-link" to="/trip">Lịch Trình</Link></li>
+                                <li><Link className="nav-item nav-link" to="/trip">Lịch Trình Khám Phá</Link></li>
+                                <li><Link className="nav-item nav-link" to="/map">Bản Đồ Vinpearl</Link></li>
                                 <li><Link className="nav-item nav-link" to="/gallary">Gợi Ý Checkin</Link></li>
                             </div>
                         </div>

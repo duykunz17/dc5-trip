@@ -53,7 +53,7 @@ const itemData = [
         title: 'Burger',
     },
     {
-        img: 'images/Gallary/13.0.webp',
+        img: 'images/Gallary/13.jpg',
         title: 'Camera',
     },
     {

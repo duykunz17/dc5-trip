@@ -6,7 +6,7 @@ const carouselItems = [
     {
         backgroundImage: 'url("images/bg-fairy-land.jpg")',
         logo: 'images/logo-fairy-land.jpg',
-        description: 'Bước chân vào xứ sở thần tiên, trải nghiệm các trò chơi trong nhà cho gia đình. Và không thể bỏ qua siêu phẩm Zipline và Đường lượn nhớ đời nếu bạn là tín đồ của cảm giác mạnh',
+        description: 'Bước chân vào xứ sở thần tiên, trải nghiệm các trò chơi trong nhà cho gia đình. Và không thể bỏ qua siêu phẩm Zipline nếu bạn là tín đồ của cảm giác mạnh',
         imageSrc: 'images/vinpearl/fairy-land/fairy-land.jpg',
         urlDetail: '/place/fairy-land'
     },
@@ -18,20 +18,6 @@ const carouselItems = [
         urlDetail: '/place/adventure-land'
     },
     {
-        backgroundImage: 'url("images/bg-safari.jpg")',
-        logo: 'images/vinpearl/kings-garden/logo_kinggarden.png',
-        description: 'Là nơi bạn có thể khám phá đời sống hoang dã thu nhỏ giữa lòng VinWonders Nha Trang. Đây còn là nhà cho các loài vật khác như hươu cao cổ, hà mã, hồng hạc và hổ bengal quý hiếm',
-        imageSrc: 'images/vinpearl/kings-garden/content_kinggarden.jpg',
-        urlDetail: '/place/kings-garden'
-    },
-    {
-        backgroundImage: 'url("images/bg-world-garden.jpg")',
-        logo: 'images/logo-world-garden.jpg',
-        description: 'Được mệnh danh là khu vườn địa đàng đẹp nhất VinWonders Nha Trang. Khi bước chân vào nơi đây chắc chắn bạn sẽ ngỡ ngàng và tưởng chừng như đang lạc vào xứ sở thần tiên đầy hoa thơm cỏ lạ',
-        imageSrc: 'images/vinpearl/worlds-garden/worlds-garden.jpg',
-        urlDetail: '/place/worlds-garden'
-    },
-    {
         backgroundImage: 'url("images/bg-sea-world.jpg")',
         logo: 'images/logo-sea-world.jpg',
         description: 'Khám phá hệ sinh thái biển lung linh, kỳ bí nơi hơn 30.000 sinh vật biển cư ngụ và chiêm ngưỡng màn biểu diễn uyển chuyển của những nàng tiên cá xinh đẹp',
@@ -41,10 +27,25 @@ const carouselItems = [
     {
         backgroundImage: 'url("images/bg-tropical-paradise.jpg")',
         logo: 'images/logo-tropical-paradise.jpg',
-        description: 'Thời gian mở cửa: 10:00 - 17:30 Thiên đường nhiệt đới nóng bỏng với công viên nước ngọt trên biển đầu tiên và duy nhất tại Việt Nam, Vịnh phao nổi 4.200m2 lớn nhất thế giới và hàng loạt trò chơi kỳ thú',
+        description: 'Thời gian mở cửa: 10:00 - 17:30 Thiên đường nhiệt đới nóng bỏng với công viên nước và Vịnh phao nổi 4.200m2 lớn nhất thế giới cùng hàng loạt trò chơi kỳ thú',
         imageSrc: 'images/vinpearl/tropical-paradise/tropical-paradise.jpg',
         urlDetail: '/place/tropical-paradise'
-    }
+    },
+    {
+        backgroundImage: 'url("images/bg-safari.jpg")',
+        logo: 'images/vinpearl/kings-garden/logo_kinggarden.png',
+        description: 'Là nơi bạn có thể khám phá đời sống hoang dã thu nhỏ giữa lòng Vinpearl Nha Trang. Đây còn là nhà cho các loài vật khác nhau ở nhiều nơi trên thế giới',
+        imageSrc: 'images/vinpearl/kings-garden/content_kinggarden.jpg',
+        urlDetail: '/place/kings-garden'
+    },
+    {
+        backgroundImage: 'url("images/bg-world-garden.jpg")',
+        logo: 'images/logo-world-garden.jpg',
+        description: 'Được mệnh danh là khu vườn địa đàng đẹp nhất Vinpearl Nha Trang. Bạn sẽ ngỡ ngàng và tưởng chừng như đang lạc vào xứ sở thần tiên đầy hoa thơm cỏ lạ',
+        imageSrc: 'images/vinpearl/worlds-garden/worlds-garden.jpg',
+        urlDetail: '/place/worlds-garden'
+    },
+    
 ];
 
 class Banner extends Component {

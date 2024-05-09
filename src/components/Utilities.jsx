@@ -5,15 +5,15 @@ import { ImageListItem, ImageList } from '@material-ui/core';
 const itemData = [
     {
         img: 'images/Gallary/4.jpg',
-        title: 'Coffee',
+        title: 'IMAGE1',
     },
     {
         img: 'images/Gallary/5.jpg',
-        title: 'Hats',
+        title: 'IMAGE2',
     },
     {
-        img: 'images/Gallary/6.jpg',
-        title: 'Honey',
+        img: 'images/Gallary/28.jpg',
+        title: 'IMAGE3',
     },
 
 ];
@@ -53,7 +53,7 @@ class Utilities extends Component {
                     <div className="row justify-content-center">
                         <div className="col-lg-6">
                             <div className="section_title text-center">
-                                <h3>HÌNH ẢNH NỔI BẬT</h3>
+                                <h3>MỘT SỐ GÓC CHỤP ẢNH ĐẸP</h3>
                             </div>
                         </div>
                     </div>

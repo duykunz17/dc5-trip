@@ -2803,14 +2803,17 @@ h3 {
 
 /* line 135, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_destination.scss */
 .destination_details_info .destination_info h3 {
+  font-family: 'Montserrat-Bold';
   font-size: 24px;
-  font-weight: 500;
-  color: #001D38;
+  color: #231f20;
   margin-bottom: 25px;
 }
 
 /* line 142, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_destination.scss */
 .destination_details_info .destination_info p {
+  font-family: 'montserrat, sans-serif';
+  font-size: 18px;
+  color: #231f20;
   margin-bottom: 20px;
 }
 
